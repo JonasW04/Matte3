@@ -9,14 +9,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { EmptyState } from "@/components/ui/empty-state";
 import { requireUser } from "@/lib/auth";
-import { getAdaptiveRecommendations } from "@/lib/adaptive";
+import { DEFAULT_ADAPTIVE_RECOMMENDATION_LIMIT, getAdaptiveRecommendations } from "@/lib/adaptive";
 import { resolveStatus } from "@/lib/progress";
 
 export const dynamic = "force-dynamic";
 
 export default async function AdaptivePage() {
   const user = await requireUser();
-  const recommendations = await getAdaptiveRecommendations(user.id, 8);
+  const recommendations = await getAdaptiveRecommendations(user.id, DEFAULT_ADAPTIVE_RECOMMENDATION_LIMIT);
 
   return (
     <PageShell>
