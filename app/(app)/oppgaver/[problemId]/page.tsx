@@ -8,13 +8,12 @@ import { MathText } from "@/components/math/math-text";
 import { Badge, StatusBadge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { getAdaptiveRecommendations } from "@/lib/adaptive";
+import { DEFAULT_ADAPTIVE_RECOMMENDATION_LIMIT, getAdaptiveRecommendations } from "@/lib/adaptive";
 import { requireUser } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { resolveStatus } from "@/lib/progress";
 
 export const dynamic = "force-dynamic";
-const ADAPTIVE_RECOMMENDATION_LIMIT = 8;
 
 function getNextId<T extends { id: string }>(items: T[], currentId: string) {
   const currentIndex = items.findIndex((item) => item.id === currentId);
@@ -34,6 +33,7 @@ export default async function ProblemPage({
   const showSolution = solution === "1";
   const fromAdaptive = from === "adaptiv";
   const fromTopic = from === "tema" && typeof topic === "string" && topic.length > 0;
+  const topicSlug = fromTopic ? topic : null;
   const showCompletedInTopic = fullforte === "1";
 
   const problem = await prisma.problem.findUnique({
@@ -52,13 +52,13 @@ export default async function ProblemPage({
   const backHref = fromAdaptive
     ? "/adaptiv"
     : fromTopic
-      ? `/tema/${topic}${showCompletedInTopic ? "?fullforte=1" : ""}`
+      ? `/tema/${topicSlug}${showCompletedInTopic ? "?fullforte=1" : ""}`
       : `/tema/${problem.topic.slug}`;
   const backLabel = fromAdaptive ? "Til adaptiv øving" : fromTopic ? "Til tema" : `Til ${problem.topic.name}`;
   let nextHref: string | null = null;
 
   if (fromAdaptive) {
-    const recommendations = await getAdaptiveRecommendations(user.id, ADAPTIVE_RECOMMENDATION_LIMIT);
+    const recommendations = await getAdaptiveRecommendations(user.id, DEFAULT_ADAPTIVE_RECOMMENDATION_LIMIT);
     const nextAdaptiveProblemId = getNextId(
       recommendations.map((item) => ({ id: item.problem.id })),
       problem.id
@@ -68,9 +68,9 @@ export default async function ProblemPage({
     }
   }
 
-  if (!nextHref && fromTopic) {
+  if (!nextHref && topicSlug) {
     const topicProblems = await prisma.problem.findMany({
-      where: { topic: { slug: topic } },
+      where: { topic: { slug: topicSlug } },
       include: {
         progress: { where: { userId: user.id } }
       },
@@ -81,7 +81,7 @@ export default async function ProblemPage({
       : topicProblems.filter((topicProblem) => resolveStatus(topicProblem.progress[0]) !== ProgressStatus.SOLVED);
     const nextTopicProblemId = getNextId(visibleProblems, problem.id);
     if (nextTopicProblemId) {
-      nextHref = `/oppgaver/${nextTopicProblemId}?from=tema&topic=${topic}${showCompletedInTopic ? "&fullforte=1" : ""}`;
+      nextHref = `/oppgaver/${nextTopicProblemId}?from=tema&topic=${topicSlug}${showCompletedInTopic ? "&fullforte=1" : ""}`;
     }
   }
 
