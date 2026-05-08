@@ -16,6 +16,11 @@ import { resolveStatus } from "@/lib/progress";
 export const dynamic = "force-dynamic";
 const ADAPTIVE_RECOMMENDATION_LIMIT = 8;
 
+function getNextId<T extends { id: string }>(items: T[], currentId: string) {
+  const currentIndex = items.findIndex((item) => item.id === currentId);
+  return currentIndex >= 0 ? items[currentIndex + 1]?.id ?? null : null;
+}
+
 export default async function ProblemPage({
   params,
   searchParams
@@ -50,18 +55,20 @@ export default async function ProblemPage({
       ? `/tema/${topic}${showCompletedInTopic ? "?fullforte=1" : ""}`
       : `/tema/${problem.topic.slug}`;
   const backLabel = fromAdaptive ? "Til adaptiv øving" : fromTopic ? "Til tema" : `Til ${problem.topic.name}`;
-  let nextProblemHref: string | null = null;
+  let nextHref: string | null = null;
 
   if (fromAdaptive) {
     const recommendations = await getAdaptiveRecommendations(user.id, ADAPTIVE_RECOMMENDATION_LIMIT);
-    const currentIndex = recommendations.findIndex((item) => item.problem.id === problem.id);
-    const nextProblem = currentIndex >= 0 ? recommendations[currentIndex + 1] : null;
-    if (nextProblem) {
-      nextProblemHref = `/oppgaver/${nextProblem.problem.id}?from=adaptiv`;
+    const nextAdaptiveProblemId = getNextId(
+      recommendations.map((item) => ({ id: item.problem.id })),
+      problem.id
+    );
+    if (nextAdaptiveProblemId) {
+      nextHref = `/oppgaver/${nextAdaptiveProblemId}?from=adaptiv`;
     }
   }
 
-  if (!nextProblemHref && fromTopic) {
+  if (!nextHref && fromTopic) {
     const topicProblems = await prisma.problem.findMany({
       where: { topic: { slug: topic } },
       include: {
@@ -72,10 +79,9 @@ export default async function ProblemPage({
     const visibleProblems = showCompletedInTopic
       ? topicProblems
       : topicProblems.filter((topicProblem) => resolveStatus(topicProblem.progress[0]) !== ProgressStatus.SOLVED);
-    const currentIndex = visibleProblems.findIndex((topicProblem) => topicProblem.id === problem.id);
-    const nextProblem = currentIndex >= 0 ? visibleProblems[currentIndex + 1] : null;
-    if (nextProblem) {
-      nextProblemHref = `/oppgaver/${nextProblem.id}?from=tema&topic=${topic}${showCompletedInTopic ? "&fullforte=1" : ""}`;
+    const nextTopicProblemId = getNextId(visibleProblems, problem.id);
+    if (nextTopicProblemId) {
+      nextHref = `/oppgaver/${nextTopicProblemId}?from=tema&topic=${topic}${showCompletedInTopic ? "&fullforte=1" : ""}`;
     }
   }
 
@@ -162,9 +168,9 @@ export default async function ProblemPage({
             </Button>
           </form>
         )}
-        {nextProblemHref && (
+        {nextHref && (
           <Button asChild variant="outline" className={showSolution ? "sm:ml-auto" : ""}>
-            <Link href={nextProblemHref}>
+            <Link href={nextHref}>
               Neste oppgave
               <ArrowRight className="h-4 w-4" />
             </Link>
