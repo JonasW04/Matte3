@@ -1,0 +1,109 @@
+{
+  "source": {
+    "courseCode": "TMA4110",
+    "year": 2024,
+    "semester": "Høst",
+    "language": "Bokmål",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4110/tma4110_24h_bokmaal.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4110/tma4110_h24_lf.pdf",
+    "notes": "Ekte NTNU-kilde. Problemene under er DEMO_SEED/parafraser til utvikling, ikke komplett import."
+  },
+  "problems": [
+    {
+      "problemNumber": "2a",
+      "title": "Matriserepresentasjon i gitt basis",
+      "problemText": "En lineærtransformasjon \\(T:V\\to V\\) er gitt ved virkningen på basisvektorene i en basis \\(B=\\{u,v,w\\}\\). Finn matriserepresentasjonen \\([T]_B\\).",
+      "solutionText": "Skriv hvert bilde \\(T(u),T(v),T(w)\\) som koordinatvektor i basisen \\(B\\). Disse koordinatvektorene blir kolonnene i \\([T]_B\\).",
+      "topicSlug": "lineaertransformasjoner-ii",
+      "subtopicSlug": "matriserepresentasjon",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 8,
+      "pdfPageRef": "s. 1, oppgave 2a",
+      "isSeedMock": true
+    },
+    {
+      "problemNumber": "2c",
+      "title": "Kjerne og bilde til en lineærtransformasjon",
+      "problemText": "Bruk matriserepresentasjonen til en lineærtransformasjon til å finne \\(\\ker T\\) og \\(\\operatorname{Im}T\\), og avgjør injektivitet og surjektivitet.",
+      "solutionText": "Radreduser matrisen. Nullrommet gir kjernen, pivotkolonnene gir en basis for bildet. Sammenlign dimensjonene med definisjons- og verdimengden.",
+      "topicSlug": "lineaertransformasjoner-i",
+      "subtopicSlug": "kjerne",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 1, oppgave 2c",
+      "isSeedMock": true
+    },
+    {
+      "problemNumber": "5a",
+      "title": "Lineær uavhengighet i \\(\\mathbb R^3\\)",
+      "problemText": "Vis at tre gitte vektorer i \\(\\mathbb R^3\\) er lineært uavhengige.",
+      "solutionText": "Sett vektorene som kolonner i en matrise. Tre pivoter etter radreduksjon viser lineær uavhengighet.",
+      "topicSlug": "vektorrom-i",
+      "subtopicSlug": "lineaer-uavhengighet",
+      "hiddenDifficultyScore": 2,
+      "estimatedMinutes": 7,
+      "pdfPageRef": "s. 2, oppgave 5a",
+      "isSeedMock": true
+    },
+    {
+      "problemNumber": "5b",
+      "title": "Avstand til et underrom",
+      "problemText": "Finn korteste avstand fra en vektor \\(u\\) til underrommet \\(V=\\operatorname{span}\\{v,w\\}\\).",
+      "solutionText": "Finn den ortogonale projeksjonen av \\(u\\) på \\(V\\). Avstanden er normen til \\(u-\\operatorname{proj}_V(u)\\).",
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "projeksjon",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 2, oppgave 5b",
+      "isSeedMock": true
+    },
+    {
+      "problemNumber": "6a",
+      "title": "Verifiser et indreprodukt",
+      "problemText": "Vis at en gitt formel definerer et indreprodukt på \\(P_2\\).",
+      "solutionText": "Kontroller linearitet i første argument, symmetri og positiv definithet. Positivitet følger ved å se på verdiene i de angitte punktene.",
+      "topicSlug": "indreproduktrom-i",
+      "subtopicSlug": "indreprodukt",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "s. 2, oppgave 6a",
+      "isSeedMock": true
+    },
+    {
+      "problemNumber": "6b",
+      "title": "Ortogonal basis i polynomrom",
+      "problemText": "Finn en ortogonal basis for et underrom av \\(P_2\\) med hensyn på et gitt indreprodukt.",
+      "solutionText": "Bruk Gram-Schmidt med det aktuelle indreproduktet. Trekk fra projeksjonen av andre generator på den første.",
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "gram-schmidt",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 2, oppgave 6b",
+      "isSeedMock": true
+    },
+    {
+      "problemNumber": "7b",
+      "title": "Minste kvadraters metode for en linje",
+      "problemText": "Bruk minste kvadraters metode til å finne linjen \\(g(x)=ax+b\\) som passer best til tre datapunkter.",
+      "solutionText": "Sett opp designmatrisen \\(A\\) og løs normalligningene \\(A^TAx=A^Tb\\).",
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "minste-kvadraters-metode",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 2, oppgave 7b",
+      "isSeedMock": true
+    },
+    {
+      "problemNumber": "10",
+      "title": "Andreordens lineær differensialligning",
+      "problemText": "Finn generell løsning av en andreordens lineær differensialligning med konstante koeffisienter, og bruk initialbetingelser.",
+      "solutionText": "Løs homogen del via karakteristisk ligning og finn en partikulær løsning med ubestemte koeffisienter. Bruk initialbetingelser til slutt.",
+      "topicSlug": "differensialligninger-i",
+      "subtopicSlug": "andre-ordens-differensialligninger",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 3, oppgave 10",
+      "isSeedMock": true
+    }
+  ]
+}

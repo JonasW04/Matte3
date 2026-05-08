@@ -1,0 +1,49 @@
+{
+  "source": {
+    "courseCode": "TMA4110",
+    "year": 2022,
+    "semester": "Kont",
+    "language": "Bokmål",
+    "examPdfUrl": "https://www.math.ntnu.no/emner/TMA4115/2022v/Diverse/EksamenTMA4110-15Kont.pdf",
+    "solutionPdfUrl": "https://www.math.ntnu.no/emner/TMA4115/2022v/Diverse/EksamenTMA4110-15Kont.pdf",
+    "notes": "Relevante TMA4110/TMA4115-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst. Denne PDF-en inneholder både oppgavetekst og løsningsdel."
+  },
+  "problems": [
+    {
+      "problemNumber": "4",
+      "title": "Minste kvadraters metode for lineært system",
+      "problemText": "Bruk minste kvadraters metode på et overbestemt lineært ligningssystem, og finn den vektoren som gir best tilpasning.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "minste-kvadraters-metode",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 3-4, oppgave 4",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "8",
+      "title": "Indreprodukt, ortogonal basis og projeksjon i funksjonsrom",
+      "problemText": "I et indreproduktrom av kontinuerlige funksjoner: bruk en ortogonal basis med sinusfunksjoner og finn projeksjonen av \\(f(x)=x\\) på underrommet.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "projeksjon",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 16,
+      "pdfPageRef": "s. 5-6, oppgave 8",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "9",
+      "title": "Lineærtransformasjon på matriser",
+      "problemText": "Studer lineærtransformasjonen \\(L_A:M_n\\to M_n\\) gitt ved \\(L_A(B)=AB-BA\\). Vis lineæritet og undersøk egenvektorer når \\(A\\) er diagonaliserbar.",
+      "solutionText": null,
+      "topicSlug": "lineaertransformasjoner-ii",
+      "subtopicSlug": "matriserepresentasjon",
+      "hiddenDifficultyScore": 5,
+      "estimatedMinutes": 18,
+      "pdfPageRef": "s. 6-8, oppgave 9",
+      "isSeedMock": false
+    }
+  ]
+}

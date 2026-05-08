@@ -1,0 +1,97 @@
+{
+  "source": {
+    "courseCode": "TMA4110",
+    "year": 2025,
+    "semester": "Vår",
+    "language": "Bokmål",
+    "examPdfUrl": "https://www.math.ntnu.no/emner/TMA4115/2025v/eksamen/v25-tma4115-eksamen.pdf",
+    "solutionPdfUrl": "https://www.math.ntnu.no/emner/TMA4115/2025v/eksamen/v25-tma4115-LF.pdf",
+    "notes": "Relevante TMA4110/TMA4115-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "2b",
+      "title": "Minste kvadraters metode for lineær modell",
+      "problemText": "Gitt tre punkter i \\(\\mathbb R^2\\): bruk minste kvadraters metode til å finne førstegradspolynomet som passer punktene best.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "minste-kvadraters-metode",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "s. 1, oppgave 2b",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "4",
+      "title": "Skjevsymmetriske matriser som underrom",
+      "problemText": "La \\(U=\\{A\\in M_2(\\mathbb R): A^T=-A\\}\\). Vis at \\(U\\) er et underrom, finn en basis og angi dimensjonen.",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "basis",
+      "hiddenDifficultyScore": 2,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "s. 1-2, oppgave 4",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "5",
+      "title": "Standardmatrise, injektivitet og surjektivitet",
+      "problemText": "En lineærtransformasjon \\(T:\\mathbb R^3\\to\\mathbb R^3\\) er gitt ved verdiene på tre vektorer. Finn standardmatrisen og avgjør om \\(T\\) er injektiv og/eller surjektiv.",
+      "solutionText": null,
+      "topicSlug": "lineaertransformasjoner-ii",
+      "subtopicSlug": "matriserepresentasjon",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 2, oppgave 5",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "6",
+      "title": "Vektet indreprodukt og ortogonal basis",
+      "problemText": "Vis at \\(\\langle x,y\\rangle=x_1y_1+4x_2y_2+9x_3y_3\\) er et indreprodukt på \\(\\mathbb R^3\\), og finn en ortogonal basis for et todimensjonalt underrom.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "gram-schmidt",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 2, oppgave 6",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "7b",
+      "title": "System av differensialligninger",
+      "problemText": "Løs systemet \\(y'=Ay\\) for en gitt diagonaliserbar \\(2\\times2\\)-matrise, og finn løsningen som tilfredsstiller gitte initialbetingelser.",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-iii",
+      "subtopicSlug": "systemer-av-differensialligninger",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 2, oppgave 7b",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "9",
+      "title": "Koordinatvektor i polynombasis",
+      "problemText": "Finn koordinatvektoren til et polynom \\(q(x)\\in P_2(\\mathbb R)\\) med hensyn til en oppgitt basis \\(S=\\{p_1,p_2,p_3\\}\\).",
+      "solutionText": null,
+      "topicSlug": "lineaertransformasjoner-ii",
+      "subtopicSlug": "koordinatvektorer",
+      "hiddenDifficultyScore": 2,
+      "estimatedMinutes": 8,
+      "pdfPageRef": "s. 3, oppgave 9",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "10",
+      "title": "Ortogonalitet gir lineær uavhengighet",
+      "problemText": "La \\(V\\) være et indreproduktrom. Vis at to ikke-null ortogonale vektorer i \\(V\\) er lineært uavhengige.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-i",
+      "subtopicSlug": "ortogonalitet",
+      "hiddenDifficultyScore": 2,
+      "estimatedMinutes": 7,
+      "pdfPageRef": "s. 3, oppgave 10",
+      "isSeedMock": false
+    }
+  ]
+}

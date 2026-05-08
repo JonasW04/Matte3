@@ -1,0 +1,97 @@
+{
+  "source": {
+    "courseCode": "TMA4100",
+    "year": 2024,
+    "semester": "Høst",
+    "language": "Bokmål",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/tma4100_2024h.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/lf_tma4100_2024h.pdf",
+    "notes": "Ekte NTNU-kilde. Problemene under er DEMO_SEED/parafraser for å demonstrere import og metadata."
+  },
+  "problems": [
+    {
+      "problemNumber": "8",
+      "title": "Konvergens av uendelig rekke",
+      "problemText": "Avgjør om en positiv rekke konvergerer ved å velge en passende sammenligningstest.",
+      "solutionText": "Sammenlign med en kjent \\(p\\)-rekke eller geometrisk rekke. Bruk grensesammenligning når leddene har samme asymptotiske orden.",
+      "topicSlug": "rekker-i",
+      "subtopicSlug": "konvergenstester",
+      "hiddenDifficultyScore": 2,
+      "estimatedMinutes": 8,
+      "pdfPageRef": "oppgave 8",
+      "isSeedMock": true
+    },
+    {
+      "problemNumber": "9a",
+      "title": "Absolutt og betinget konvergens",
+      "problemText": "Undersøk en alternerende rekke og avgjør om den er absolutt eller betinget konvergent.",
+      "solutionText": "Bruk Leibniz-testen på den alternerende rekken og test absoluttverdirekken separat.",
+      "topicSlug": "rekker-i",
+      "subtopicSlug": "absolutt-konvergens",
+      "hiddenDifficultyScore": 2,
+      "estimatedMinutes": 9,
+      "pdfPageRef": "oppgave 9a",
+      "isSeedMock": true
+    },
+    {
+      "problemNumber": "9b",
+      "title": "Konvergensradius for potensrekke",
+      "problemText": "Finn konvergensradius og undersøk endepunktene for en potensrekke.",
+      "solutionText": "Bruk forholdstesten for å finne radius. Sett inn endepunktene og vurder de resulterende tallrekkene.",
+      "topicSlug": "rekker-ii",
+      "subtopicSlug": "konvergensradius",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "oppgave 9b",
+      "isSeedMock": true
+    },
+    {
+      "problemNumber": "10a",
+      "title": "Potensrekke fra kjent rekke",
+      "problemText": "Finn en potensrekke for en funksjon ved å ta utgangspunkt i en kjent geometrisk rekke.",
+      "solutionText": "Start fra \\(1/(1-u)=\\sum u^n\\), sett inn riktig uttrykk for \\(u\\), og angi gyldighetsintervallet.",
+      "topicSlug": "rekker-ii",
+      "subtopicSlug": "potensrekker",
+      "hiddenDifficultyScore": 2,
+      "estimatedMinutes": 8,
+      "pdfPageRef": "oppgave 10a",
+      "isSeedMock": true
+    },
+    {
+      "problemNumber": "10b",
+      "title": "Taylorpolynom av grad 3",
+      "problemText": "Finn Taylorpolynomet av grad 3 for en funksjon rundt \\(x=0\\).",
+      "solutionText": "Beregn funksjonsverdien og de tre første deriverte i null, og sett dem inn i Taylorformelen.",
+      "topicSlug": "taylorrekker-og-taylorpolynom",
+      "subtopicSlug": "taylorpolynom",
+      "hiddenDifficultyScore": 2,
+      "estimatedMinutes": 8,
+      "pdfPageRef": "oppgave 10b",
+      "isSeedMock": true
+    },
+    {
+      "problemNumber": "10c",
+      "title": "Taylorrekke og restledd",
+      "problemText": "Bruk Taylorrekke til å approksimere en funksjon og gi et estimat for restleddet.",
+      "solutionText": "Skriv opp Taylorrekken og bruk Lagranges restledd for å kontrollere feilen på intervallet.",
+      "topicSlug": "taylorrekker-og-taylorpolynom",
+      "subtopicSlug": "restleddet",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "oppgave 10c",
+      "isSeedMock": true
+    },
+    {
+      "problemNumber": "11",
+      "title": "Blandet eksamensoppgave med rekker",
+      "problemText": "Løs en oppgave som kombinerer Taylorpolynom, potensrekker og grenseverdi.",
+      "solutionText": "Bruk de laveste ikke-null leddene i Taylorrekken for å forenkle uttrykket før grenseverdien tas.",
+      "topicSlug": "repetisjon-hele-pensum",
+      "subtopicSlug": "blandede-oppgaver",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "oppgave 11",
+      "isSeedMock": true
+    }
+  ]
+}

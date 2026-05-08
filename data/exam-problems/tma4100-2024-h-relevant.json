@@ -1,0 +1,37 @@
+{
+  "source": {
+    "courseCode": "TMA4100",
+    "year": 2024,
+    "semester": "Høst",
+    "language": "Nynorsk",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/tma4100_2024h.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/lf_tma4100_2024h.pdf",
+    "notes": "Relevante TMA4100-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "5",
+      "title": "Derivert fra Taylorrekke",
+      "problemText": "En funksjon har Taylorrekka \\(\\sum_{n=0}^{\\infty}(-1)^n x^{4n+1}/(2n+1)!\\). Finn \\(f^{(13)}(0)\\).",
+      "solutionText": null,
+      "topicSlug": "taylorrekker-og-taylorpolynom",
+      "subtopicSlug": "taylorrekker",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 8,
+      "pdfPageRef": "s. 1, oppgave 5",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "9",
+      "title": "Konvergensintervall for potensrekke",
+      "problemText": "Finn konvergensintervallet til \\(\\sum_{n=1}^{\\infty}\\frac{n(x+2)^n}{5^{n-1}}\\). Husk å sjekke endepunktene.",
+      "solutionText": null,
+      "topicSlug": "rekker-ii",
+      "subtopicSlug": "konvergensradius",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "s. 2, oppgave 9",
+      "isSeedMock": false
+    }
+  ]
+}

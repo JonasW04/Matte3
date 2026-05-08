@@ -1,0 +1,25 @@
+{
+  "source": {
+    "courseCode": "TMA4100",
+    "year": 2021,
+    "semester": "Høst",
+    "language": "Bokmål",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2021h.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/lf_tma4100_2021h.pdf",
+    "notes": "Relevante TMA4100-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "6",
+      "title": "Absolutt, betinget eller divergent for tre rekker",
+      "problemText": "Klassifiser tre rekker som absolutt konvergente, betinget konvergente eller divergente, inkludert alternerende og fakultetsbaserte ledd.",
+      "solutionText": null,
+      "topicSlug": "rekker-i",
+      "subtopicSlug": "absolutt-konvergens",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 2, oppgave 6",
+      "isSeedMock": false
+    }
+  ]
+}

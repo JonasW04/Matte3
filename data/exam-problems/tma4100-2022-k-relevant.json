@@ -1,0 +1,37 @@
+{
+  "source": {
+    "courseCode": "TMA4100",
+    "year": 2022,
+    "semester": "Kont",
+    "language": "Bokmål",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2022k.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/lf_tma4100_2022k.pdf",
+    "notes": "Relevante TMA4100-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "3",
+      "title": "Bruk av eksponentialrekke i integral",
+      "problemText": "Bruk rekkeutviklingen til \\(e^{-x}\\) for å uttrykke \\(\\int_0^1\\frac{1-e^{-x}}{x}\\,dx\\) som en uendelig rekke, og bestem nok ledd for gitt feilgrense.",
+      "solutionText": null,
+      "topicSlug": "taylorrekker-og-taylorpolynom",
+      "subtopicSlug": "taylorrekker",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 15,
+      "pdfPageRef": "s. 1, oppgave 3",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "5",
+      "title": "Konvergens eller divergens for tre rekker",
+      "problemText": "Avgjør konvergens eller divergens for tre rekker ved å velge passende tester, blant annet rot- og sammenligningstester.",
+      "solutionText": null,
+      "topicSlug": "rekker-i",
+      "subtopicSlug": "konvergenstester",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 2, oppgave 5",
+      "isSeedMock": false
+    }
+  ]
+}

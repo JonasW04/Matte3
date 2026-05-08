@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: matte3
+      POSTGRES_USER: matte3
+      POSTGRES_PASSWORD: matte3
+    ports:
+      - "5432:5432"
+    volumes:
+      - matte3-postgres:/var/lib/postgresql/data
+
+volumes:
+  matte3-postgres:

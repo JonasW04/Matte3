@@ -1,0 +1,61 @@
+{
+  "source": {
+    "courseCode": "TMA4110",
+    "year": 2022,
+    "semester": "Høst",
+    "language": "Bokmål",
+    "examPdfUrl": "https://www.math.ntnu.no/emner/TMA4110/2022h/Diverse%20til%20eksamen/tma4110_2022h_nb.pdf",
+    "solutionPdfUrl": "https://www.math.ntnu.no/emner/TMA4110/2022h/Diverse%20til%20eksamen/BM_LF.pdf",
+    "notes": "Relevante TMA4110/TMA4115-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "Lang 3",
+      "title": "Ortonormal basis og projeksjonsmatrise",
+      "problemText": "For et underrom \\(U\\subseteq\\mathbb R^3\\): finn en ortonormal basis for \\(U\\), og finn standardmatrisen til den ortogonale projeksjonen \\(\\mathbb R^3\\to U\\).",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "projeksjon",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 16,
+      "pdfPageRef": "s. 6, langsvar oppgave 3",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "Lang 4",
+      "title": "Matriserepresentasjon i gitt basis",
+      "problemText": "En lineærtransformasjon på et tredimensjonalt vektorrom er gitt ved virkning på en basis \\(B\\). Beregn \\(T^2\\) på basisvektorene og bestem matriserepresentasjonen \\([T]_B\\).",
+      "solutionText": null,
+      "topicSlug": "lineaertransformasjoner-ii",
+      "subtopicSlug": "matriserepresentasjon",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 6, langsvar oppgave 4",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "Lang 6",
+      "title": "Egenverdier og system av differensialligninger",
+      "problemText": "Finn egenverdier og egenvektorer for en gitt matrise \\(A\\), og bruk dem til å løse systemet \\(y'(t)=Ay(t)\\).",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-iii",
+      "subtopicSlug": "systemer-av-differensialligninger",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 16,
+      "pdfPageRef": "s. 7, langsvar oppgave 6",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "Lang 7",
+      "title": "Householder-matrise og egenverdier",
+      "problemText": "La \\(H=I-2uu^T\\) være en Householder-matrise. Vis en formel for inversen og bestem egenverdier og tilhørende egenrom.",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "egenverdier-og-egenvektorer",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 7, langsvar oppgave 7",
+      "isSeedMock": false
+    }
+  ]
+}

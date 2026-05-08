@@ -1,0 +1,61 @@
+{
+  "source": {
+    "courseCode": "TMA4110",
+    "year": 2024,
+    "semester": "Høst",
+    "language": "Bokmål",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4110/tma4110_24h_bokmaal.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4110/tma4110_h24_lf.pdf",
+    "notes": "Relevante TMA4110-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "2",
+      "title": "Matriserepresentasjon, kjerne og bilde",
+      "problemText": "En lineærtransformasjon \\(T:V\\to V\\) er gitt ved virkningen på en basis \\(B=\\{u,v,w\\}\\). Finn \\([T]_B\\), beregn en koordinatvektor, og bestem \\(\\ker T\\) og \\(\\operatorname{Im}T\\).",
+      "solutionText": null,
+      "topicSlug": "lineaertransformasjoner-ii",
+      "subtopicSlug": "matriserepresentasjon",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 16,
+      "pdfPageRef": "s. 1, oppgave 2",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "5",
+      "title": "Lineær uavhengighet og projeksjonsavstand",
+      "problemText": "Vis at tre vektorer i \\(\\mathbb R^3\\) er lineært uavhengige, og finn korteste avstand fra en vektor til underrommet utspent av to av vektorene.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "projeksjon",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 2, oppgave 5",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "6",
+      "title": "Indreprodukt og ortogonal basis i \\(P_2\\)",
+      "problemText": "Vis at et diskret indreprodukt på \\(P_2\\) er et indreprodukt, og finn en ortogonal basis for et underrom av \\(P_2\\).",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "gram-schmidt",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 2, oppgave 6",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "7",
+      "title": "Minste kvadraters linje",
+      "problemText": "Finn først et andregradspolynom gjennom tre datapunkter, og bruk deretter minste kvadraters metode til å finne linjen som passer datapunktene best.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "minste-kvadraters-metode",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 2-3, oppgave 7",
+      "isSeedMock": false
+    }
+  ]
+}

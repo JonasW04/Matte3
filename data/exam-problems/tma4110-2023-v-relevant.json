@@ -1,0 +1,61 @@
+{
+  "source": {
+    "courseCode": "TMA4110",
+    "year": 2023,
+    "semester": "Vår",
+    "language": "Bokmål",
+    "examPdfUrl": "https://www.math.ntnu.no/emner/TMA4115/2023v/eksamen/tma4115_2023v_nb.pdf",
+    "solutionPdfUrl": "https://www.math.ntnu.no/emner/TMA4115/2023v/eksamen/tma4115_2023v_nb_lf.pdf",
+    "notes": "Relevante TMA4110/TMA4115-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "4",
+      "title": "Basis for nullrom og kolonnerom",
+      "problemText": "Finn en basis for \\(\\operatorname{Null}(A)\\) og \\(\\operatorname{Col}(A)\\), og bestem \\(\\dim \\operatorname{Null}(A^T)\\), for en gitt matrise \\(A\\).",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "basis",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 1, oppgave 4",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "6",
+      "title": "Bestem lineærtransformasjon fra to vektorverdier",
+      "problemText": "En lineærtransformasjon \\(T:\\mathbb R^2\\to\\mathbb R^2\\) er gitt ved verdiene på to lineært uavhengige vektorer. Bestem \\(T(e_1)\\) og \\(T(e_2)\\).",
+      "solutionText": null,
+      "topicSlug": "lineaertransformasjoner-ii",
+      "subtopicSlug": "matriserepresentasjon",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "s. 2, oppgave 6",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "7",
+      "title": "Projeksjon og minste kvadraters løsning",
+      "problemText": "Beregn ortogonal projeksjon av \\(b\\) på \\(\\operatorname{Col}(A)\\), og bruk dette til å finne minste-kvadratsløsningen til et overbestemt lineært system.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "minste-kvadraters-metode",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 15,
+      "pdfPageRef": "s. 2, oppgave 7",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "9",
+      "title": "Kjerne til lineærtransformasjon på polynomrom",
+      "problemText": "La \\(T:P_2(\\mathbb R)\\to\\mathbb R^3\\) være gitt ved verdier av \\(p\\), \\(p'\\) og \\(p''\\). Vis at \\(T\\) er lineær, og bestem \\(\\operatorname{Ker}(T)\\).",
+      "solutionText": null,
+      "topicSlug": "lineaertransformasjoner-i",
+      "subtopicSlug": "kjerne",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 2, oppgave 9",
+      "isSeedMock": false
+    }
+  ]
+}

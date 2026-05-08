@@ -1,0 +1,37 @@
+{
+  "source": {
+    "courseCode": "TMA4100",
+    "year": 2023,
+    "semester": "Kont",
+    "language": "Bokmål",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2023k.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/lf_tma4100_2023k.pdf",
+    "notes": "Relevante TMA4100-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "5",
+      "title": "Forholdstest og grensesammenligning",
+      "problemText": "Vurder rekka \\(\\sum_{n=1}^{\\infty}\\frac{\\ln(n/100)}{n^{2023}}\\). Forklar hvorfor forholdstesten ikke avgjør spørsmålet, og bruk en annen test.",
+      "solutionText": null,
+      "topicSlug": "rekker-i",
+      "subtopicSlug": "konvergenstester",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 1-2, oppgave 5",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "10",
+      "title": "Taylorpolynom for \\(e^{-x^2}\\)",
+      "problemText": "Bruk Taylorpolynomet av grad 4 om \\(x=0\\) til \\(f(x)=e^{-x^2}\\) for å tilnærme løsningen av \\(e^{-x^2}=x^2\\).",
+      "solutionText": null,
+      "topicSlug": "taylorrekker-og-taylorpolynom",
+      "subtopicSlug": "taylorpolynom",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 2, oppgave 10",
+      "isSeedMock": false
+    }
+  ]
+}

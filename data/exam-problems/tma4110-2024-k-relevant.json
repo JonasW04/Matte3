@@ -1,0 +1,61 @@
+{
+  "source": {
+    "courseCode": "TMA4110",
+    "year": 2024,
+    "semester": "Kont",
+    "language": "Bokmål",
+    "examPdfUrl": "https://www.math.ntnu.no/emner/TMA4115/2024v/eksamen/tma4115_2024v_kont_nb.pdf",
+    "solutionPdfUrl": "https://www.math.ntnu.no/emner/TMA4115/2024v/eksamen/tma4115_2024v_kont_loes.pdf",
+    "notes": "Relevante TMA4110/TMA4115-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "2",
+      "title": "Nullrom og ortogonal basis for radrom",
+      "problemText": "Bestem en basis for \\(\\operatorname{Null}(M)\\) og en ortogonal basis for \\(\\operatorname{Col}(M^T)\\), altså radrommet til \\(M\\).",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "gram-schmidt",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 15,
+      "pdfPageRef": "s. 1, oppgave 2",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "4",
+      "title": "Underrom av matriser",
+      "problemText": "Vis at mengden \\(S=\\{\\begin{pmatrix}x&y\\\\-y&x\\end{pmatrix}:x,y\\in\\mathbb R\\}\\) er et underrom av \\(M_2\\), og finn basis og dimensjon.",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "basis",
+      "hiddenDifficultyScore": 2,
+      "estimatedMinutes": 9,
+      "pdfPageRef": "s. 1, oppgave 4",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "6",
+      "title": "Kjerne til lineærtransformasjon på \\(M_2\\)",
+      "problemText": "La \\(T:M_2\\to M_2\\) være gitt ved at den beholder diagonalen og nuller ut de andre elementene. Vis at \\(T\\) er lineær, bestem \\(\\ker T\\), og avgjør injektivitet/surjektivitet.",
+      "solutionText": null,
+      "topicSlug": "lineaertransformasjoner-i",
+      "subtopicSlug": "kjerne",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 11,
+      "pdfPageRef": "s. 2, oppgave 6",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "10",
+      "title": "Indreprodukt fra positiv definit matrise",
+      "problemText": "For \\(A=\\begin{pmatrix}2&-1\\\\-1&4\\end{pmatrix}\\), vis direkte fra definisjonene at \\(\\langle u,v\\rangle=u^TAv\\) er et indreprodukt på \\(\\mathbb R^2\\).",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-i",
+      "subtopicSlug": "indreprodukt",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "s. 2, oppgave 10",
+      "isSeedMock": false
+    }
+  ]
+}

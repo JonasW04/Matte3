@@ -1,0 +1,37 @@
+{
+  "source": {
+    "courseCode": "TMA4100",
+    "year": 2022,
+    "semester": "Høst",
+    "language": "Nynorsk",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2022h.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/lf_tma4100_2022h.pdf",
+    "notes": "Relevante TMA4100-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "7",
+      "title": "Konvergensklassifisering av rekker",
+      "problemText": "Avgjør om to rekker er absolutt konvergente, betinget konvergente eller divergente, blant annet en alternerende rekke med \\(\\cos^2(n)\\).",
+      "solutionText": null,
+      "topicSlug": "rekker-i",
+      "subtopicSlug": "absolutt-konvergens",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 2, oppgave 7",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "8",
+      "title": "Taylorpolynom og ulikhet",
+      "problemText": "Finn førstegradstaylorpolynomet til \\(f(x)=(1+x)^{-r}\\) om \\(x=0\\), og bruk det til å vise en ulikhet for \\(x>0\\).",
+      "solutionText": null,
+      "topicSlug": "taylorrekker-og-taylorpolynom",
+      "subtopicSlug": "taylorpolynom",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 11,
+      "pdfPageRef": "s. 2, oppgave 8",
+      "isSeedMock": false
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+@import "katex/dist/katex.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f6f4ef;
+  --foreground: #1a1815;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+}
+
+body {
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0) 22rem),
+    var(--background);
+  color: var(--foreground);
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-underline-offset: 4px;
+}
+
+.math-prose p {
+  margin-bottom: 0.7rem;
+  line-height: 1.75;
+}
+
+.math-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.math-prose .katex-display {
+  margin: 0.85rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.15rem;
+}
+
+::selection {
+  background: rgba(200, 16, 46, 0.16);
+}

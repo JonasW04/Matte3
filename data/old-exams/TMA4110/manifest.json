@@ -1,0 +1,92 @@
+[
+  {
+    "label": "2025-kont-BM",
+    "url": "https://www.math.ntnu.no/emner/TMA4115/2025v/eksamen/tma4115-kont25-bokmal.pdf",
+    "year": 2025,
+    "term": "kont",
+    "fileName": "01-2025-kont-bm.pdf",
+    "relativePath": "data/old-exams/TMA4110/01-2025-kont-bm.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
+  },
+  {
+    "label": "2025-var-BM",
+    "url": "https://www.math.ntnu.no/emner/TMA4115/2025v/eksamen/v25-tma4115-eksamen.pdf",
+    "year": 2025,
+    "term": "var",
+    "fileName": "02-2025-var-bm.pdf",
+    "relativePath": "data/old-exams/TMA4110/02-2025-var-bm.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
+  },
+  {
+    "label": "2024-host-BM",
+    "url": "https://wiki.math.ntnu.no/_media/tma4110/tma4110_24h_bokmaal.pdf",
+    "year": 2024,
+    "term": "host",
+    "fileName": "03-2024-host-bm.pdf",
+    "relativePath": "data/old-exams/TMA4110/03-2024-host-bm.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
+  },
+  {
+    "label": "2024-kont-BM",
+    "url": "https://www.math.ntnu.no/emner/TMA4115/2024v/eksamen/tma4115_2024v_kont_nb.pdf",
+    "year": 2024,
+    "term": "kont",
+    "fileName": "04-2024-kont-bm.pdf",
+    "relativePath": "data/old-exams/TMA4110/04-2024-kont-bm.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
+  },
+  {
+    "label": "2024-var-BM",
+    "url": "https://www.math.ntnu.no/emner/TMA4115/2024v/eksamen/tma4115_2024v_nb.pdf",
+    "year": 2024,
+    "term": "var",
+    "fileName": "05-2024-var-bm.pdf",
+    "relativePath": "data/old-exams/TMA4110/05-2024-var-bm.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
+  },
+  {
+    "label": "2023-host-BM",
+    "url": "https://www.math.ntnu.no/emner/TMA4110/2023h/eksamen/tma4110_2023h_nb.pdf",
+    "year": 2023,
+    "term": "host",
+    "fileName": "06-2023-host-bm.pdf",
+    "relativePath": "data/old-exams/TMA4110/06-2023-host-bm.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
+  },
+  {
+    "label": "2023-kont-BM",
+    "url": "https://www.math.ntnu.no/emner/TMA4115/2023v/eksamen/tma4115_2023k_nb.pdf",
+    "year": 2023,
+    "term": "kont",
+    "fileName": "07-2023-kont-bm.pdf",
+    "relativePath": "data/old-exams/TMA4110/07-2023-kont-bm.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
+  },
+  {
+    "label": "2023-var-BM",
+    "url": "https://www.math.ntnu.no/emner/TMA4115/2023v/eksamen/tma4115_2023v_nb.pdf",
+    "year": 2023,
+    "term": "var",
+    "fileName": "08-2023-var-bm.pdf",
+    "relativePath": "data/old-exams/TMA4110/08-2023-var-bm.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
+  },
+  {
+    "label": "2022-host-BM",
+    "url": "https://www.math.ntnu.no/emner/TMA4110/2022h/Diverse til eksamen/tma4110_2022h_nb.pdf",
+    "year": 2022,
+    "term": "host",
+    "fileName": "09-2022-host-bm.pdf",
+    "relativePath": "data/old-exams/TMA4110/09-2022-host-bm.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
+  },
+  {
+    "label": "2022-kont-BM",
+    "url": "https://www.math.ntnu.no/emner/TMA4115/2022v/Diverse/EksamenTMA4110-15Kont.pdf",
+    "year": 2022,
+    "term": "kont",
+    "fileName": "10-2022-kont-bm.pdf",
+    "relativePath": "data/old-exams/TMA4110/10-2022-kont-bm.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
+  }
+]

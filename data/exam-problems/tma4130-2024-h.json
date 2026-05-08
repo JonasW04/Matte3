@@ -1,0 +1,109 @@
+{
+  "source": {
+    "courseCode": "TMA4130",
+    "year": 2024,
+    "semester": "Høst",
+    "language": "English",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4130/2024h/exam_math_4n_4d_tma4130_35-8.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4130/2024h/exam_math_4n_4d_tma4130_35-8.pdf",
+    "notes": "Ekte NTNU-kilde med oppgaver og løsninger i samme PDF. Problemene under er DEMO_SEED/parafraser."
+  },
+  "problems": [
+    {
+      "problemNumber": "3",
+      "title": "Førsteordens numerisk ODE-metode",
+      "problemText": "Utfør et par steg med en eksplisitt metode for en førsteordens differensialligning \\(y'=f(t,y)\\).",
+      "solutionText": "Bruk formelen steg for steg: \\(y_{n+1}=y_n+h f(t_n,y_n)\\). Hold orden på både tid og funksjonsverdi.",
+      "topicSlug": "differensialligninger-ii",
+      "subtopicSlug": "eulers-metode",
+      "hiddenDifficultyScore": 2,
+      "estimatedMinutes": 8,
+      "pdfPageRef": "oppgave 3",
+      "isSeedMock": true
+    },
+    {
+      "problemNumber": "4a",
+      "title": "Butcher-tablå og Runge-Kutta",
+      "problemText": "Tolk et gitt Butcher-tablå og utfør ett Runge-Kutta-steg for en enkel ODE.",
+      "solutionText": "Les av koeffisientene \\(a_{ij}\\), \\(b_i\\) og \\(c_i\\). Beregn alle delstegene \\(k_i\\) før du setter dem inn i oppdateringen.",
+      "topicSlug": "differensialligninger-iii",
+      "subtopicSlug": "runge-kutta",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 15,
+      "pdfPageRef": "oppgave 4a",
+      "isSeedMock": true
+    },
+    {
+      "problemNumber": "4b",
+      "title": "Systemer av differensialligninger",
+      "problemText": "Formuler et høyereordens problem som et førsteordens system og diskuter numerisk løsningsmetode.",
+      "solutionText": "Innfør nye variabler for funksjonen og dens deriverte. Skriv systemet på formen \\(x'=F(t,x)\\).",
+      "topicSlug": "differensialligninger-iii",
+      "subtopicSlug": "systemer-av-differensialligninger",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "oppgave 4b",
+      "isSeedMock": true
+    },
+    {
+      "problemNumber": "5a",
+      "title": "Lagrangeinterpolasjon",
+      "problemText": "Finn interpolasjonspolynomet gjennom et lite sett datapunkter.",
+      "solutionText": "Bygg Lagrange-basispolynomene \\(L_i(x)\\), og summer \\(p(x)=\\sum y_i L_i(x)\\).",
+      "topicSlug": "interpolasjonsmetoder",
+      "subtopicSlug": "lagrangeinterpolasjon",
+      "hiddenDifficultyScore": 2,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "oppgave 5a",
+      "isSeedMock": true
+    },
+    {
+      "problemNumber": "5b",
+      "title": "Interpolasjonsfeil",
+      "problemText": "Bruk feilformelen for interpolasjon til å gi en øvre grense for feilen på et intervall.",
+      "solutionText": "Bruk \\(|f(x)-p_n(x)|\\le M/(n+1)!\\,\\prod_i |x-x_i|\\), og finn et praktisk estimat for produktleddet.",
+      "topicSlug": "interpolasjonsmetoder",
+      "subtopicSlug": "feilanalyse",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "oppgave 5b",
+      "isSeedMock": true
+    },
+    {
+      "problemNumber": "6a",
+      "title": "Sammensatt trapesregel",
+      "problemText": "Estimer et bestemt integral med sammensatt trapesregel.",
+      "solutionText": "Velg \\(h=(b-a)/n\\), evaluer funksjonen i nodene og bruk vektene \\(1,2,\\ldots,2,1\\).",
+      "topicSlug": "numerisk-integrasjon",
+      "subtopicSlug": "trapesregelen",
+      "hiddenDifficultyScore": 2,
+      "estimatedMinutes": 8,
+      "pdfPageRef": "oppgave 6a",
+      "isSeedMock": true
+    },
+    {
+      "problemNumber": "6b",
+      "title": "Simpsons metode og feilkontroll",
+      "problemText": "Bruk Simpsons metode til å estimere et integral og kommenter forventet feilorden.",
+      "solutionText": "For partall \\(n\\) brukes vektene \\(1,4,2,4,\\ldots,2,4,1\\). Feilen er proporsjonal med \\(h^4\\) når funksjonen er glatt nok.",
+      "topicSlug": "numerisk-integrasjon",
+      "subtopicSlug": "simpsons-metode",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "oppgave 6b",
+      "isSeedMock": true
+    },
+    {
+      "problemNumber": "7",
+      "title": "Adaptiv kvadratur",
+      "problemText": "Forklar hvordan adaptiv kvadratur deler opp intervallet når lokal feil er for stor.",
+      "solutionText": "Sammenlign ett Simpson-estimat på hele intervallet med summen av estimatene på to halvdeler. Del videre der avviket er størst.",
+      "topicSlug": "numerisk-integrasjon",
+      "subtopicSlug": "adaptiv-kvadratur",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "oppgave 7",
+      "isSeedMock": true
+    }
+  ]
+}

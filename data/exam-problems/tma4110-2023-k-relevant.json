@@ -1,0 +1,85 @@
+{
+  "source": {
+    "courseCode": "TMA4110",
+    "year": 2023,
+    "semester": "Kont",
+    "language": "Bokmål",
+    "examPdfUrl": "https://www.math.ntnu.no/emner/TMA4115/2023v/eksamen/tma4115_2023k_nb.pdf",
+    "solutionPdfUrl": "https://www.math.ntnu.no/emner/TMA4115/2023v/eksamen/tma4115_2023k_nb_lf.pdf",
+    "notes": "Relevante TMA4110/TMA4115-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "3",
+      "title": "Basis for kolonnerom og nullrom",
+      "problemText": "Finn en basis for \\(\\operatorname{Col}(A)\\) og \\(\\operatorname{Null}(A)\\) for en gitt \\(3\\times3\\)-matrise, og diskuter når \\(Ax=b\\) har løsning og når løsningen er unik.",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "basis",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 2, oppgave 3",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "5",
+      "title": "Bevis lineær uavhengighet",
+      "problemText": "Anta at \\(u\\), \\(v\\) og \\(w\\) er lineært uavhengige i et vektorrom \\(V\\). Vis at \\(u+v\\), \\(u+w\\) og \\(v+w\\) også er lineært uavhengige.",
+      "solutionText": null,
+      "topicSlug": "vektorrom-i",
+      "subtopicSlug": "lineaer-uavhengighet",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "s. 1-2, oppgave 5",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "6",
+      "title": "Ortogonal basis og projeksjon i \\(\\mathbb R^3\\)",
+      "problemText": "For \\(V=\\operatorname{span}\\{(1,1,1),(0,1,2)\\}\\): finn en ortogonal basis og beregn ortogonal projeksjon av en gitt vektor på \\(V\\).",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "projeksjon",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 2, oppgave 6",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "7",
+      "title": "Egenverdier og ODE-system",
+      "problemText": "Finn egenverdiene til en gitt \\(3\\times3\\)-matrise, beregn en høy potens av matrisen, og løs initialverdiproblemet \\(y'(t)=Ay(t)\\).",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-iii",
+      "subtopicSlug": "systemer-av-differensialligninger",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 16,
+      "pdfPageRef": "s. 2, oppgave 7",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "8",
+      "title": "Minste kvadraters andregradspolynom",
+      "problemText": "Bruk minste kvadraters metode til å finne andregradspolynomet \\(p(x)=ax^2+bx+c\\) som passer best til fire datapunkter.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "minste-kvadraters-metode",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 15,
+      "pdfPageRef": "s. 2, oppgave 8",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "9",
+      "title": "Basis og dimensjon for symmetriske matriser",
+      "problemText": "La \\(S_n=\\{A\\in M_{n\\times n}(\\mathbb R):A^T=A\\}\\). Bestem en basis for \\(S_2\\) og finn \\(\\dim S_n\\) for alle \\(n\\).",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "dimensjon",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "s. 2, oppgave 9",
+      "isSeedMock": false
+    }
+  ]
+}

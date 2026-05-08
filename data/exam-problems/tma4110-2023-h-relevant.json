@@ -1,0 +1,73 @@
+{
+  "source": {
+    "courseCode": "TMA4110",
+    "year": 2023,
+    "semester": "Høst",
+    "language": "Bokmål",
+    "examPdfUrl": "https://www.math.ntnu.no/emner/TMA4110/2023h/eksamen/tma4110_2023h_nb.pdf",
+    "solutionPdfUrl": "https://www.math.ntnu.no/emner/TMA4110/2023h/eksamen/tma4110_2023h_nb_lf.pdf",
+    "notes": "Relevante TMA4110/TMA4115-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "1",
+      "title": "Basis for kolonnerom og nullrom",
+      "problemText": "Regn ut en basis for kolonnerommet og nullrommet til en gitt matrise \\(A\\), og bestem \\(\\dim \\operatorname{Null}(A^T)\\).",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "basis",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 1, oppgave 1",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "5",
+      "title": "Lineær uavhengighet og ortogonalitet i polynomrom",
+      "problemText": "Avgjør om tre polynomer i \\(P_2(\\mathbb R)\\) er lineært uavhengige, og sjekk om to av dem er ortogonale med hensyn til et diskret indreprodukt.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-i",
+      "subtopicSlug": "ortogonalitet",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 1-2, oppgave 5",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "7",
+      "title": "Projeksjon og minste kvadraters løsning",
+      "problemText": "Bruk en oppgitt ortogonal basis for \\(\\operatorname{Col}(A)\\) til å projisere en vektor \\(b\\) ned på \\(\\operatorname{Col}(A)\\), og finn minste-kvadratsløsningen til \\(Ax=b\\).",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "minste-kvadraters-metode",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 15,
+      "pdfPageRef": "s. 2, oppgave 7",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "8",
+      "title": "Basisbytte mellom to basiser",
+      "problemText": "Gitt to ordnede basiser \\(B\\) og \\(C\\) for \\(\\mathbb R^2\\): finn standardkoordinatene til en vektor gitt i \\(B\\)-koordinater, og bestem basisbyttematrisen fra \\(C\\) til \\(B\\).",
+      "solutionText": null,
+      "topicSlug": "lineaertransformasjoner-ii",
+      "subtopicSlug": "basisbytte",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 2, oppgave 8",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "9",
+      "title": "Bilde av underrom under lineærtransformasjon",
+      "problemText": "La \\(T:V\\to W\\) være en lineærtransformasjon og \\(U\\) et underrom av \\(V\\). Vis at \\(T(U)=\\{T(u):u\\in U\\}\\) er et underrom av \\(W\\).",
+      "solutionText": null,
+      "topicSlug": "lineaertransformasjoner-i",
+      "subtopicSlug": "bilde-rekkevidde",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 9,
+      "pdfPageRef": "s. 2, oppgave 9",
+      "isSeedMock": false
+    }
+  ]
+}

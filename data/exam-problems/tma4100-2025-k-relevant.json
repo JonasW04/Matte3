@@ -1,0 +1,25 @@
+{
+  "source": {
+    "courseCode": "TMA4100",
+    "year": 2025,
+    "semester": "Kont",
+    "language": "Nynorsk",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/tma4100_2025k.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/lf_tma4100_2025k.pdf",
+    "notes": "Relevante TMA4100-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "2",
+      "title": "Taylorpolynom for kubikkrot",
+      "problemText": "Finn Taylorpolynomet av grad 2 om \\(x=0\\) til \\(f(x)=(1+x)^{1/3}\\), og bruk det til å approksimere \\(\\sqrt[3]{1.3}\\).",
+      "solutionText": null,
+      "topicSlug": "taylorrekker-og-taylorpolynom",
+      "subtopicSlug": "taylorpolynom",
+      "hiddenDifficultyScore": 2,
+      "estimatedMinutes": 9,
+      "pdfPageRef": "s. 1, oppgave 2",
+      "isSeedMock": false
+    }
+  ]
+}

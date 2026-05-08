@@ -1,0 +1,37 @@
+{
+  "source": {
+    "courseCode": "TMA4100",
+    "year": 2023,
+    "semester": "Høst",
+    "language": "Nynorsk",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/tma4100_2023h.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/lf_tma4100_2023h.pdf",
+    "notes": "Relevante TMA4100-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "7",
+      "title": "Absolutt, betinget eller divergent",
+      "problemText": "Avgjør om tre rekker er absolutt konvergente, betinget konvergente eller divergente, inkludert alternerende rekker.",
+      "solutionText": null,
+      "topicSlug": "rekker-i",
+      "subtopicSlug": "absolutt-konvergens",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 2, oppgave 7",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "8",
+      "title": "Taylorrekke for integral med logaritme",
+      "problemText": "Finn Taylorrekka om \\(x=0\\) til \\(F(x)=\\int_0^x \\frac{\\ln(1+t)}{t}\\,dt\\), og bestem hvor den konvergerer.",
+      "solutionText": null,
+      "topicSlug": "taylorrekker-og-taylorpolynom",
+      "subtopicSlug": "taylorrekker",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 2, oppgave 8",
+      "isSeedMock": false
+    }
+  ]
+}

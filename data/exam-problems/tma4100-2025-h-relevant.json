@@ -1,0 +1,49 @@
+{
+  "source": {
+    "courseCode": "TMA4100",
+    "year": 2025,
+    "semester": "Høst",
+    "language": "Nynorsk",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/tma4100_2025h_nn.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/lf_tma4100_2025h.pdf",
+    "notes": "Relevante TMA4100-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "6",
+      "title": "Konvergensintervall for potensrekke",
+      "problemText": "Finn konvergensintervallet til potensrekka \\(\\sum_{n=1}^{\\infty} n^3(2x-3)^n\\). Sjekk også endepunktene.",
+      "solutionText": null,
+      "topicSlug": "rekker-ii",
+      "subtopicSlug": "konvergensradius",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "s. 2, oppgave 6",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "8",
+      "title": "Taylorrekke for integral av \\(e^{-t^2}\\)",
+      "problemText": "Finn Taylorrekka om \\(x=0\\) til \\(f(x)=\\int_0^x e^{-t^2}\\,dt\\).",
+      "solutionText": null,
+      "topicSlug": "taylorrekker-og-taylorpolynom",
+      "subtopicSlug": "taylorrekker",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "s. 2, oppgave 8",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "9",
+      "title": "Sammenligning av positive rekker",
+      "problemText": "La \\(c_n>0\\), og anta at \\(\\sum_{n=1}^{\\infty}4^n c_n\\) konvergerer. Avgjør om \\(\\sum c_n\\) konvergerer.",
+      "solutionText": null,
+      "topicSlug": "rekker-i",
+      "subtopicSlug": "konvergenstester",
+      "hiddenDifficultyScore": 2,
+      "estimatedMinutes": 8,
+      "pdfPageRef": "s. 2, oppgave 9",
+      "isSeedMock": false
+    }
+  ]
+}

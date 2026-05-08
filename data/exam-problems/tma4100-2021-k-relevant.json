@@ -1,0 +1,25 @@
+{
+  "source": {
+    "courseCode": "TMA4100",
+    "year": 2021,
+    "semester": "Kont",
+    "language": "Nynorsk",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2021k.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/lf_tma4100_2021k.pdf",
+    "notes": "Relevante TMA4100-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "8",
+      "title": "Konvergensradius og endepunkter",
+      "problemText": "Vis at potensrekka \\(\\sum_{n=0}^{\\infty}\\frac{(-1)^n}{2n^2+1}x^n\\) har konvergensradius \\(R=1\\), og sjekk \\(x=\\pm1\\).",
+      "solutionText": null,
+      "topicSlug": "rekker-ii",
+      "subtopicSlug": "konvergensradius",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "s. 3, oppgave 8",
+      "isSeedMock": false
+    }
+  ]
+}
