@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, CheckCircle2, ExternalLink, Eye, XCircle } from "lucide-react";
+import { ArrowLeft, ArrowRight, CheckCircle2, ExternalLink, Eye, XCircle } from "lucide-react";
 import { ProgressStatus } from "@prisma/client";
 import { notFound } from "next/navigation";
 import { markProblemAction, viewSolutionAndRedirectAction } from "@/actions/progress-actions";
@@ -8,6 +8,7 @@ import { MathText } from "@/components/math/math-text";
 import { Badge, StatusBadge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { getAdaptiveRecommendations } from "@/lib/adaptive";
 import { requireUser } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { resolveStatus } from "@/lib/progress";
@@ -19,13 +20,15 @@ export default async function ProblemPage({
   searchParams
 }: {
   params: Promise<{ problemId: string }>;
-  searchParams: Promise<{ solution?: string; from?: string }>;
+  searchParams: Promise<{ solution?: string; from?: string; topic?: string; fullforte?: string }>;
 }) {
   const user = await requireUser();
   const { problemId } = await params;
-  const { solution, from } = await searchParams;
+  const { solution, from, topic, fullforte } = await searchParams;
   const showSolution = solution === "1";
   const fromAdaptive = from === "adaptiv";
+  const fromTopic = from === "tema" && typeof topic === "string" && topic.length > 0;
+  const showCompletedInTopic = fullforte === "1";
 
   const problem = await prisma.problem.findUnique({
     where: { id: problemId },
@@ -40,8 +43,40 @@ export default async function ProblemPage({
   if (!problem) notFound();
 
   const status = resolveStatus(problem.progress[0]);
-  const backHref = fromAdaptive ? "/adaptiv" : `/tema/${problem.topic.slug}`;
-  const backLabel = fromAdaptive ? "Til adaptiv øving" : `Til ${problem.topic.name}`;
+  const backHref = fromAdaptive
+    ? "/adaptiv"
+    : fromTopic
+      ? `/tema/${topic}${showCompletedInTopic ? "?fullforte=1" : ""}`
+      : `/tema/${problem.topic.slug}`;
+  const backLabel = fromAdaptive ? "Til adaptiv øving" : fromTopic ? "Til tema" : `Til ${problem.topic.name}`;
+  let nextProblemHref: string | null = null;
+
+  if (fromAdaptive) {
+    const recommendations = await getAdaptiveRecommendations(user.id, 8);
+    const currentIndex = recommendations.findIndex((item) => item.problem.id === problem.id);
+    const nextProblem = currentIndex >= 0 ? recommendations[currentIndex + 1] : null;
+    if (nextProblem) {
+      nextProblemHref = `/oppgaver/${nextProblem.problem.id}?from=adaptiv`;
+    }
+  }
+
+  if (!nextProblemHref && fromTopic) {
+    const topicProblems = await prisma.problem.findMany({
+      where: { topic: { slug: topic } },
+      include: {
+        progress: { where: { userId: user.id } }
+      },
+      orderBy: [{ source: { year: "desc" } }, { problemNumber: "asc" }]
+    });
+    const visibleProblems = showCompletedInTopic
+      ? topicProblems
+      : topicProblems.filter((topicProblem) => resolveStatus(topicProblem.progress[0]) !== ProgressStatus.SOLVED);
+    const currentIndex = visibleProblems.findIndex((topicProblem) => topicProblem.id === problem.id);
+    const nextProblem = currentIndex >= 0 ? visibleProblems[currentIndex + 1] : null;
+    if (nextProblem) {
+      nextProblemHref = `/oppgaver/${nextProblem.id}?from=tema&topic=${topic}${showCompletedInTopic ? "&fullforte=1" : ""}`;
+    }
+  }
 
   return (
     <PageShell width="medium">
@@ -119,12 +154,20 @@ export default async function ProblemPage({
           </Button>
         </form>
         {!showSolution && (
-          <form action={viewSolutionAndRedirectAction.bind(null, problem.id, fromAdaptive ? "adaptiv" : undefined)} className="sm:ml-auto">
+          <form action={viewSolutionAndRedirectAction.bind(null, problem.id, from, topic, showCompletedInTopic ? "1" : undefined)} className="sm:ml-auto">
             <Button variant="default" className="w-full sm:w-auto">
               <Eye className="h-4 w-4" />
               Vis løsningsforslag
             </Button>
           </form>
+        )}
+        {nextProblemHref && (
+          <Button asChild variant="outline" className={showSolution ? "sm:ml-auto" : ""}>
+            <Link href={nextProblemHref}>
+              Neste oppgave
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </Button>
         )}
       </div>
 
