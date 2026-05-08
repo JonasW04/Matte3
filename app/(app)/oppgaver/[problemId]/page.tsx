@@ -19,12 +19,13 @@ export default async function ProblemPage({
   searchParams
 }: {
   params: Promise<{ problemId: string }>;
-  searchParams: Promise<{ solution?: string }>;
+  searchParams: Promise<{ solution?: string; from?: string }>;
 }) {
   const user = await requireUser();
   const { problemId } = await params;
-  const { solution } = await searchParams;
+  const { solution, from } = await searchParams;
   const showSolution = solution === "1";
+  const fromAdaptive = from === "adaptiv";
 
   const problem = await prisma.problem.findUnique({
     where: { id: problemId },
@@ -39,12 +40,14 @@ export default async function ProblemPage({
   if (!problem) notFound();
 
   const status = resolveStatus(problem.progress[0]);
+  const backHref = fromAdaptive ? "/adaptiv" : `/tema/${problem.topic.slug}`;
+  const backLabel = fromAdaptive ? "Til adaptiv øving" : `Til ${problem.topic.name}`;
 
   return (
     <PageShell width="medium">
-      <Link href={`/tema/${problem.topic.slug}`} className="mb-6 inline-flex items-center gap-2 text-sm font-semibold text-stone-500 hover:text-stone-950">
+      <Link href={backHref} className="mb-6 inline-flex items-center gap-2 text-sm font-semibold text-stone-500 hover:text-stone-950">
         <ArrowLeft className="h-4 w-4" />
-        Til {problem.topic.name}
+        {backLabel}
       </Link>
 
       <div className="mb-6">
@@ -116,7 +119,7 @@ export default async function ProblemPage({
           </Button>
         </form>
         {!showSolution && (
-          <form action={viewSolutionAndRedirectAction.bind(null, problem.id)} className="sm:ml-auto">
+          <form action={viewSolutionAndRedirectAction.bind(null, problem.id, fromAdaptive ? "adaptiv" : undefined)} className="sm:ml-auto">
             <Button variant="default" className="w-full sm:w-auto">
               <Eye className="h-4 w-4" />
               Vis løsningsforslag

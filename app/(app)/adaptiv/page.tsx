@@ -88,7 +88,7 @@ export default async function AdaptivePage() {
                         </Button>
                       </form>
                       <Button asChild variant="ghost" className="sm:ml-auto">
-                        <Link href={`/oppgaver/${item.problem.id}`}>
+                        <Link href={`/oppgaver/${item.problem.id}?from=adaptiv`}>
                           Åpne oppgave
                           <ArrowRight className="h-4 w-4" />
                         </Link>
@@ -107,7 +107,7 @@ export default async function AdaptivePage() {
               </CardHeader>
               <CardContent className="space-y-2">
                 {recommendations.map((item, index) => (
-                  <Link key={item.problem.id} href={`/oppgaver/${item.problem.id}`} className="flex items-center gap-3 rounded-lg px-2 py-2 text-sm hover:bg-stone-50">
+                  <Link key={item.problem.id} href={`/oppgaver/${item.problem.id}?from=adaptiv`} className="flex items-center gap-3 rounded-lg px-2 py-2 text-sm hover:bg-stone-50">
                     <span className="grid h-6 w-6 place-items-center rounded-full bg-stone-100 text-xs font-semibold text-stone-600">{index + 1}</span>
                     <span className="min-w-0 flex-1 truncate">
                       {item.problem.topic.name} · {item.problem.subtopic.name}
