@@ -14,6 +14,7 @@ import { prisma } from "@/lib/prisma";
 import { resolveStatus } from "@/lib/progress";
 
 export const dynamic = "force-dynamic";
+const ADAPTIVE_RECOMMENDATION_LIMIT = 8;
 
 export default async function ProblemPage({
   params,
@@ -52,7 +53,7 @@ export default async function ProblemPage({
   let nextProblemHref: string | null = null;
 
   if (fromAdaptive) {
-    const recommendations = await getAdaptiveRecommendations(user.id, 8);
+    const recommendations = await getAdaptiveRecommendations(user.id, ADAPTIVE_RECOMMENDATION_LIMIT);
     const currentIndex = recommendations.findIndex((item) => item.problem.id === problem.id);
     const nextProblem = currentIndex >= 0 ? recommendations[currentIndex + 1] : null;
     if (nextProblem) {
