@@ -88,6 +88,11 @@ export default async function ExamSessionPage({ params }: { params: Promise<{ se
                 <MathText>{item.problem.problemText}</MathText>
               </div>
               <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
+                <Button asChild variant="ghost">
+                  <Link href={`/oppgaver/${item.problemId}?from=eksamen&session=${session.id}`}>
+                    Se oppgave
+                  </Link>
+                </Button>
                 <form action={markExamProblemAction.bind(null, session.id, item.problemId, PracticeProblemStatus.SOLVED)}>
                   <Button variant={item.status === PracticeProblemStatus.SOLVED ? "success" : "outline"} className="w-full sm:w-auto">
                     <CheckCircle2 className="h-4 w-4" />

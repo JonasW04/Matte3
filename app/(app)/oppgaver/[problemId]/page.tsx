@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, CheckCircle2, ExternalLink, Eye, XCircle } from "lucide-react";
 import { ProgressStatus } from "@prisma/client";
 import { notFound } from "next/navigation";
+import { completeExamSessionAction } from "@/actions/exam-actions";
 import { markProblemAction, viewSolutionAndRedirectAction } from "@/actions/progress-actions";
 import { PageShell } from "@/components/app/page-shell";
 import { MathText } from "@/components/math/math-text";
@@ -25,13 +26,15 @@ export default async function ProblemPage({
   searchParams
 }: {
   params: Promise<{ problemId: string }>;
-  searchParams: Promise<{ solution?: string; from?: string; topic?: string; fullforte?: string }>;
+  searchParams: Promise<{ solution?: string; from?: string; topic?: string; fullforte?: string; session?: string }>;
 }) {
   const user = await requireUser();
   const { problemId } = await params;
-  const { solution, from, topic, fullforte } = await searchParams;
-  const showSolution = solution === "1";
+  const { solution, from, topic, fullforte, session } = await searchParams;
   const fromAdaptive = from === "adaptiv";
+  const fromExam = from === "eksamen" && typeof session === "string" && session.length > 0;
+  const examSessionId = fromExam ? session : null;
+  const showSolution = solution === "1" && !fromExam;
   const fromTopic = from === "tema" && typeof topic === "string" && topic.length > 0;
   const topicSlug = fromTopic ? topic : null;
   const showCompletedInTopic = fullforte === "1";
@@ -51,10 +54,12 @@ export default async function ProblemPage({
   const status = resolveStatus(problem.progress[0]);
   const backHref = fromAdaptive
     ? "/adaptiv"
+    : fromExam
+      ? `/eksamen/${examSessionId}`
     : fromTopic
       ? `/tema/${topicSlug}${showCompletedInTopic ? "?fullforte=1" : ""}`
       : `/tema/${problem.topic.slug}`;
-  const backLabel = fromAdaptive ? "Til adaptiv øving" : fromTopic ? "Til tema" : `Til ${problem.topic.name}`;
+  const backLabel = fromAdaptive ? "Til adaptiv øving" : fromExam ? "Til eksamensøkt" : fromTopic ? "Til tema" : `Til ${problem.topic.name}`;
   let nextHref: string | null = null;
 
   if (fromAdaptive) {
@@ -65,6 +70,25 @@ export default async function ProblemPage({
     );
     if (nextAdaptiveProblemId) {
       nextHref = `/oppgaver/${nextAdaptiveProblemId}?from=adaptiv`;
+    }
+  }
+
+  if (!nextHref && examSessionId) {
+    const examSession = await prisma.practiceSession.findFirst({
+      where: { id: examSessionId, userId: user.id },
+      select: {
+        problems: {
+          select: { problemId: true },
+          orderBy: { order: "asc" }
+        }
+      }
+    });
+    if (!examSession) notFound();
+
+    const currentProblemIndex = examSession.problems.findIndex((item) => item.problemId === problem.id);
+    const nextExamProblemId = currentProblemIndex >= 0 ? examSession.problems[currentProblemIndex + 1]?.problemId ?? null : null;
+    if (nextExamProblemId) {
+      nextHref = `/oppgaver/${nextExamProblemId}?from=eksamen&session=${examSessionId}`;
     }
   }
 
@@ -123,7 +147,7 @@ export default async function ProblemPage({
           Eksamens-PDF {problem.pdfPageRef ? `· ${problem.pdfPageRef}` : ""}
           <ExternalLink className="h-4 w-4 text-stone-400" />
         </a>
-        {(problem.solutionPdfUrl || problem.source.solutionPdfUrl) && (
+        {!fromExam && (problem.solutionPdfUrl || problem.source.solutionPdfUrl) && (
           <a
             href={problem.solutionPdfUrl ?? problem.source.solutionPdfUrl ?? "#"}
             target="_blank"
@@ -160,7 +184,7 @@ export default async function ProblemPage({
             Jeg klarte ikke denne
           </Button>
         </form>
-        {!showSolution && (
+        {!showSolution && !fromExam && (
           <form action={viewSolutionAndRedirectAction.bind(null, problem.id, from, topic, showCompletedInTopic ? "1" : undefined)} className="sm:ml-auto">
             <Button variant="default" className="w-full sm:w-auto">
               <Eye className="h-4 w-4" />
@@ -169,12 +193,17 @@ export default async function ProblemPage({
           </form>
         )}
         {nextHref && (
-          <Button asChild variant="outline" className={showSolution ? "sm:ml-auto" : ""}>
+          <Button asChild variant="outline" className={showSolution || fromExam ? "sm:ml-auto" : ""}>
             <Link href={nextHref}>
               Neste oppgave
               <ArrowRight className="h-4 w-4" />
             </Link>
           </Button>
+        )}
+        {fromExam && examSessionId && !nextHref && (
+          <form action={completeExamSessionAction.bind(null, examSessionId)} className="sm:ml-auto">
+            <Button variant="ntnu" className="w-full sm:w-auto">Lever økt</Button>
+          </form>
         )}
       </div>
 
