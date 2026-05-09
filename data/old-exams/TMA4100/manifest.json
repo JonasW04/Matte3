@@ -88,5 +88,95 @@
     "fileName": "10-2021-kont-oppgaver.pdf",
     "relativePath": "data/old-exams/TMA4100/10-2021-kont-oppgaver.pdf",
     "sourcePage": "https://wiki.math.ntnu.no/tma4100/2024h/eksamensoppgaver"
+  },
+  {
+    "label": "2020-host-oppgaver",
+    "url": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2020h.pdf",
+    "year": 2020,
+    "term": "host",
+    "fileName": "11-2020-host-oppgaver.pdf",
+    "relativePath": "data/old-exams/TMA4100/11-2020-host-oppgaver.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4100/2024h/eksamensoppgaver"
+  },
+  {
+    "label": "2020-kont-oppgaver",
+    "url": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2020k.pdf",
+    "year": 2020,
+    "term": "kont",
+    "fileName": "12-2020-kont-oppgaver.pdf",
+    "relativePath": "data/old-exams/TMA4100/12-2020-kont-oppgaver.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4100/2024h/eksamensoppgaver"
+  },
+  {
+    "label": "2019-host-oppgaver",
+    "url": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2019h.pdf",
+    "year": 2019,
+    "term": "host",
+    "fileName": "13-2019-host-oppgaver.pdf",
+    "relativePath": "data/old-exams/TMA4100/13-2019-host-oppgaver.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4100/2024h/eksamensoppgaver"
+  },
+  {
+    "label": "2019-kont-oppgaver",
+    "url": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2019k.pdf",
+    "year": 2019,
+    "term": "kont",
+    "fileName": "14-2019-kont-oppgaver.pdf",
+    "relativePath": "data/old-exams/TMA4100/14-2019-kont-oppgaver.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4100/2024h/eksamensoppgaver"
+  },
+  {
+    "label": "2018-host-oppgaver",
+    "url": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2018h.pdf",
+    "year": 2018,
+    "term": "host",
+    "fileName": "15-2018-host-oppgaver.pdf",
+    "relativePath": "data/old-exams/TMA4100/15-2018-host-oppgaver.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4100/2024h/eksamensoppgaver"
+  },
+  {
+    "label": "2018-kont-oppgaver",
+    "url": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2018k.pdf",
+    "year": 2018,
+    "term": "kont",
+    "fileName": "16-2018-kont-oppgaver.pdf",
+    "relativePath": "data/old-exams/TMA4100/16-2018-kont-oppgaver.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4100/2024h/eksamensoppgaver"
+  },
+  {
+    "label": "2017-host-oppgaver",
+    "url": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2017h.pdf",
+    "year": 2017,
+    "term": "host",
+    "fileName": "17-2017-host-oppgaver.pdf",
+    "relativePath": "data/old-exams/TMA4100/17-2017-host-oppgaver.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4100/2024h/eksamensoppgaver"
+  },
+  {
+    "label": "2017-kont-oppgaver",
+    "url": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2017k.pdf",
+    "year": 2017,
+    "term": "kont",
+    "fileName": "18-2017-kont-oppgaver.pdf",
+    "relativePath": "data/old-exams/TMA4100/18-2017-kont-oppgaver.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4100/2024h/eksamensoppgaver"
+  },
+  {
+    "label": "2016-host-oppgaver",
+    "url": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2016h.pdf",
+    "year": 2016,
+    "term": "host",
+    "fileName": "19-2016-host-oppgaver.pdf",
+    "relativePath": "data/old-exams/TMA4100/19-2016-host-oppgaver.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4100/2024h/eksamensoppgaver"
+  },
+  {
+    "label": "2016-kont-oppgaver",
+    "url": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2016k.pdf",
+    "year": 2016,
+    "term": "kont",
+    "fileName": "20-2016-kont-oppgaver.pdf",
+    "relativePath": "data/old-exams/TMA4100/20-2016-kont-oppgaver.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4100/2024h/eksamensoppgaver"
   }
 ]

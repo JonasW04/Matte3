@@ -1,0 +1,73 @@
+{
+  "source": {
+    "courseCode": "TMA4110",
+    "year": 2019,
+    "semester": "Kont",
+    "language": "Bokmål",
+    "examPdfUrl": "https://www.math.ntnu.no/emner/TMA4115/2019v/eksamen/TMA4110_TMA4115_kont_sommer2019_bokmaal.pdf",
+    "solutionPdfUrl": "https://www.math.ntnu.no/emner/TMA4115/2019v/eksamen/TMA4110_TMA4115_kont_sommer2019_losningsforslag.pdf",
+    "notes": "Relevante TMA4110/TMA4115-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "2",
+      "title": "Nullrom, kolonnerom og ortogonal projeksjon",
+      "problemText": "Definer nullrommet til en matrise og vis at det er et underrom. For en konkret matrise: finn basis for kolonnerom og nullrom, bestem dimensjoner, finn en ortogonal basis for kolonnerommet, og projiser en vektor ned på kolonnerommet.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "projeksjon",
+      "hiddenDifficultyScore": 5,
+      "estimatedMinutes": 22,
+      "pdfPageRef": "oppgave 2",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "3",
+      "title": "Standardmatrise, kjerne og surjektivitet",
+      "problemText": "En lineærtransformasjon \\(T:\\mathbb R^2\\to\\mathbb R^2\\) er beskrevet geometrisk ved bildet av enhetskvadratet. Finn standardmatrisen, beregn bildet av en vektor, finn \\(\\ker T\\), og avgjør om \\(T\\) er surjektiv.",
+      "solutionText": null,
+      "topicSlug": "lineaertransformasjoner-i",
+      "subtopicSlug": "kjerne",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "oppgave 3",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "4",
+      "title": "System av differensialligninger",
+      "problemText": "Finn den generelle løsningen til et todimensjonalt lineært system \\(y'=Ay\\).",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-iii",
+      "subtopicSlug": "systemer-av-differensialligninger",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "oppgave 4",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "5",
+      "title": "Eksplisitt formel for \\(A^n\\)",
+      "problemText": "Finn en eksplisitt formel for \\(A^n\\) for en gitt \\(2\\times2\\)-matrise og alle \\(n\\ge 0\\), ved hjelp av egenverdier eller diagonaliseringsargument.",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "egenverdier-og-egenvektorer",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "oppgave 5",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "7",
+      "title": "Projeksjon som lineærtransformasjon",
+      "problemText": "Definer projeksjonen \\(P_v(w)\\) av en vektor \\(w\\) på en ikke-null vektor \\(v\\), vis at \\(P_v:\\mathbb R^n\\to\\mathbb R^n\\) er lineær, og vis at projeksjonen og restvektoren er ortogonale.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "projeksjon",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "oppgave 7",
+      "isSeedMock": false
+    }
+  ]
+}

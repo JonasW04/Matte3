@@ -1,0 +1,85 @@
+{
+  "source": {
+    "courseCode": "TMA4100",
+    "year": 2018,
+    "semester": "Høst",
+    "language": "Nynorsk",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2018h.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/lf_tma4100_2018h.pdf",
+    "notes": "Relevante TMA4100-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "3",
+      "title": "Separerbar differensialligning",
+      "problemText": "Løs initialverdiproblemet \\((x^2+1)y'-xy=0\\), \\(y(0)=2\\).",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-i",
+      "subtopicSlug": "differensialligninger",
+      "hiddenDifficultyScore": 2,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "s. 1, oppgave 3",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "4",
+      "title": "Simpsons metode for buelengde",
+      "problemText": "Bruk Simpsons metode med fire delintervall til å approksimere buelengden til grafen \\(y=\\frac25x^{5/2}\\) på intervallet \\([0,2]\\).",
+      "solutionText": null,
+      "topicSlug": "numerisk-integrasjon",
+      "subtopicSlug": "simpsons-metode",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 1, oppgave 4",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "7a",
+      "title": "Konvergens av rekke med eksponentielle ledd",
+      "problemText": "Avgjør om rekken \\(\\sum_{n=0}^{\\infty}9^n/(8^n+10n)\\) konvergerer eller divergerer.",
+      "solutionText": null,
+      "topicSlug": "rekker-i",
+      "subtopicSlug": "konvergenstester",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 8,
+      "pdfPageRef": "s. 1, oppgave 7 i)",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "7b",
+      "title": "Konvergensintervall for alternerende potensrekke",
+      "problemText": "Avgjør hvilke \\(x\\)-verdier som gir konvergens for \\(\\sum_{n=1}^{\\infty}(-1)^n(1-2x)^n/n\\).",
+      "solutionText": null,
+      "topicSlug": "rekker-ii",
+      "subtopicSlug": "konvergensradius",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 1, oppgave 7 ii)",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "8",
+      "title": "Taylorpolynom med uniform feilgrense",
+      "problemText": "Bestem et taylorpolynom til \\(\\cos x\\) om \\(a=0\\) slik at feilen er høyst \\(1/120\\) for alle \\(x\\in[-1,1]\\), og begrunn valget.",
+      "solutionText": null,
+      "topicSlug": "taylorrekker-og-taylorpolynom",
+      "subtopicSlug": "restleddet",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 2, oppgave 8",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "9",
+      "title": "Øvre og nedre estimat for integral",
+      "problemText": "Bruk en tabell for en voksende funksjon til å finne en nedre og en øvre sum for \\(\\int_{-1}^{5}(g(x)+1)\\,dx\\) med avstand mindre enn 10.",
+      "solutionText": null,
+      "topicSlug": "numerisk-integrasjon",
+      "subtopicSlug": "numerisk-integrasjon",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 2, oppgave 9",
+      "isSeedMock": false
+    }
+  ]
+}

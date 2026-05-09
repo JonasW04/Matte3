@@ -1,0 +1,49 @@
+{
+  "source": {
+    "courseCode": "TMA4100",
+    "year": 2017,
+    "semester": "Høst",
+    "language": "Bokmål",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2017h.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/lf_tma4100_2017h.pdf",
+    "notes": "Relevante TMA4100-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "8",
+      "title": "Konvergensklassifisering av tre rekker",
+      "problemText": "Avgjør om tre rekker er absolutt konvergente, betinget konvergente eller divergente, inkludert en fakultetsrekke, en eksponentielt avtagende rekke og en alternerende rot-rekke.",
+      "solutionText": null,
+      "topicSlug": "rekker-i",
+      "subtopicSlug": "absolutt-konvergens",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 1, oppgave 8",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "9",
+      "title": "Lineært initialverdiproblem med logaritmeledd",
+      "problemText": "Løs initialverdiproblemet \\(x^2y'+2xy=\\ln x\\), \\(y(1)=2\\), for \\(x>0\\).",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-i",
+      "subtopicSlug": "lineaere-differensialligninger",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 2, oppgave 9",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "10",
+      "title": "Integral som alternerende rekke",
+      "problemText": "Skriv \\(\\int_0^1 \\ln(1+x)/x\\,dx\\) som en alternerende rekke, og bestem hvor mange ledd som trengs for feil mindre enn \\(0.005\\).",
+      "solutionText": null,
+      "topicSlug": "rekker-ii",
+      "subtopicSlug": "operasjoner-pa-rekker",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 15,
+      "pdfPageRef": "s. 2, oppgave 10",
+      "isSeedMock": false
+    }
+  ]
+}

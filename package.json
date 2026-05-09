@@ -9,6 +9,8 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "exams:download": "tsx scripts/download-old-exams.ts",
+    "exams:download:more": "tsx scripts/download-old-exams.ts --offset 10 --limit 10 --append",
+    "problems:import": "tsx scripts/import-exam-problems.ts",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "prisma:seed": "tsx prisma/seed.ts",

@@ -1,0 +1,49 @@
+{
+  "source": {
+    "courseCode": "TMA4110",
+    "year": 2019,
+    "semester": "Høst",
+    "language": "Bokmål",
+    "examPdfUrl": "https://www.math.ntnu.no/emner/TMA4110/eksamen/TMA4110_host_2019_bokmaal.pdf",
+    "solutionPdfUrl": "https://www.math.ntnu.no/emner/TMA4110/eksamen/TMA4110_host_2019_losningsforslag.pdf",
+    "notes": "Relevante TMA4110-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "1b",
+      "title": "Kolonnerom og nullrom med parameter",
+      "problemText": "For en parameteravhengig matrise \\(A_t\\): beskriv kolonnerommet og nullrommet for alle reelle verdier av parameteren.",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "basis",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "oppgave 1b",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "3",
+      "title": "Hermitisk matrise og diagonaliserbarhet",
+      "problemText": "Vis at en \\(2\\times2\\)-matrise av formen \\(\\begin{pmatrix}r_1&z\\\\\\bar z&r_2\\end{pmatrix}\\) har reelle egenverdier og er diagonaliserbar, og finn egenverdier, egenrom og diagonalform i et konkret tilfelle.",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "komplekse-vektorrom",
+      "hiddenDifficultyScore": 5,
+      "estimatedMinutes": 18,
+      "pdfPageRef": "oppgave 3",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "5",
+      "title": "Indreprodukt, Gram-Schmidt og lineærtransformasjon på \\(P_2\\)",
+      "problemText": "Vis at et integraluttrykk definerer et indreprodukt på \\(P_2(\\mathbb R)\\), bruk Gram-Schmidt til å finne en ortogonal basis, finn koordinater i denne basisen, og finn matrisen til \\(T(p)=p+p'\\).",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "gram-schmidt",
+      "hiddenDifficultyScore": 5,
+      "estimatedMinutes": 24,
+      "pdfPageRef": "oppgave 5",
+      "isSeedMock": false
+    }
+  ]
+}

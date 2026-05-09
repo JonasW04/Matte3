@@ -1,0 +1,73 @@
+{
+  "source": {
+    "courseCode": "TMA4110",
+    "year": 2021,
+    "semester": "Høst",
+    "language": "Bokmål",
+    "examPdfUrl": "https://www.math.ntnu.no/emner/TMA4110/2021h/eksamen/Bokmaal/tma4110-eksamen-h21-bokmaal.pdf",
+    "solutionPdfUrl": "https://www.math.ntnu.no/emner/TMA4110/2021h/eksamen/LF/tma4110-eksamen-h21-LF.pdf",
+    "notes": "Relevante TMA4110-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "2",
+      "title": "Interpolasjon og minste kvadraters linje",
+      "problemText": "Finn andregradspolynomet som går gjennom tre punkter, og bruk minste kvadraters metode til å finne førstegradspolynomet som passer best til punktene.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "minste-kvadraters-metode",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 1, oppgave 2",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "3",
+      "title": "Kolonnerom, dimensjon og løsbart system",
+      "problemText": "For en parameteravhengig \\(3\\times3\\)-matrise: bestem når determinanten er ulik null, finn dimensjonen til kolonnerommet for alle parameterverdier, og avgjør når et lineært system er løsbart.",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "dimensjon",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 16,
+      "pdfPageRef": "s. 1, oppgave 3",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "5",
+      "title": "Ortogonal basis og projeksjon i \\(C[0,1]\\)",
+      "problemText": "I funksjonsrommet \\(C[0,1]\\) med integralindreprodukt: finn en ortogonal basis for \\(\\operatorname{span}\\{1,x\\}\\), og finn projeksjonen av \\(e^x\\) ned på dette underrommet.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "projeksjon",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 15,
+      "pdfPageRef": "s. 2, oppgave 5",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "6",
+      "title": "Finn matrise fra ODE-løsninger",
+      "problemText": "Finn en reell \\(2\\times2\\)-matrise \\(A\\) for et system \\(y'(t)=Ay(t)\\) når to løsninger med eksponentialledd og generalisert egenvektorstruktur er gitt.",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-iii",
+      "subtopicSlug": "systemer-av-differensialligninger",
+      "hiddenDifficultyScore": 5,
+      "estimatedMinutes": 16,
+      "pdfPageRef": "s. 2, oppgave 6",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "7",
+      "title": "Matriseequation og inverterbarhet",
+      "problemText": "For en gitt \\(3\\times3\\)-matrise \\(B\\): finn en inverterbar matrise \\(A\\) som oppfyller \\(3A=A^2-AB\\), og forklar hvorfor en tilsvarende ligning med \\(2A\\) ikke har inverterbar løsning.",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "egenverdier-og-egenvektorer",
+      "hiddenDifficultyScore": 5,
+      "estimatedMinutes": 18,
+      "pdfPageRef": "s. 2, oppgave 7",
+      "isSeedMock": false
+    }
+  ]
+}

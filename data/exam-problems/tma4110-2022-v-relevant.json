@@ -1,0 +1,109 @@
+{
+  "source": {
+    "courseCode": "TMA4110",
+    "year": 2022,
+    "semester": "Vår",
+    "language": "Bokmål",
+    "examPdfUrl": "https://www.math.ntnu.no/emner/TMA4115/2022v/Diverse/EksamenTMA4115V%C3%A5r2022-BM.pdf",
+    "solutionPdfUrl": "https://www.math.ntnu.no/emner/TMA4115/2022v/Diverse/EksamenTMA4115V%C3%A5r2022-BM_LF.pdf",
+    "notes": "Relevante TMA4110/TMA4115-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "2",
+      "title": "Underrom og ortogonalt komplement i \\(\\mathbb R^3\\)",
+      "problemText": "La \\(V=\\{x\\in\\mathbb R^3:a^Tx=0\\}\\). Vis at \\(V\\) er et underrom av \\(\\mathbb R^3\\), og finn en basis for det ortogonale komplementet \\(V^\\perp\\).",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "ortogonalt-komplement",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "s. 1, oppgave 2",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "3",
+      "title": "Kolonnerom og nullrom over komplekse tall",
+      "problemText": "Finn en basis for kolonnerommet og en basis for nullrommet til en gitt kompleks \\(3\\times3\\)-matrise.",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "komplekse-vektorrom",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 1, oppgave 3",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "4",
+      "title": "Gram-Schmidt i funksjonsrom",
+      "problemText": "Avgjør om \\(1\\), \\(x\\) og \\(\\sin x\\) er ortogonale i \\(C([-\\pi,\\pi])\\), og bruk Gram-Schmidt til å finne en ortogonal basis for spennet.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "gram-schmidt",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 1, oppgave 4",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "5",
+      "title": "Minste kvadraters metode for overbestemt system",
+      "problemText": "Bruk minste kvadraters metode til å finne en tilnærmet løsning av et overbestemt lineært ligningssystem med tre ligninger og to ukjente.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "minste-kvadraters-metode",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 2, oppgave 5",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "6",
+      "title": "Matriserepresentasjon og basisbytte",
+      "problemText": "For en lineærtransformasjon \\(T:\\mathbb R^2\\to\\mathbb R^2\\): finn standardmatrisen, basisbyttematrisen fra en gitt basis til standardbasis, og matriserepresentasjonen av \\(T\\) i den gitte basisen.",
+      "solutionText": null,
+      "topicSlug": "lineaertransformasjoner-ii",
+      "subtopicSlug": "basisbytte",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 18,
+      "pdfPageRef": "s. 2, oppgave 6",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "7",
+      "title": "Diagonaliserbar matrise og høy potens",
+      "problemText": "Bruk oppgitte egenvektorer og egenverdier til å begrunne at en \\(3\\times3\\)-matrise er diagonaliserbar, finn en diagonalisering, og beregn en høy potens brukt på en vektor.",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "egenverdier-og-egenvektorer",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 16,
+      "pdfPageRef": "s. 2, oppgave 7",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "9",
+      "title": "Parametrisk system av differensialligninger",
+      "problemText": "Finn den generelle løsningen til systemet \\(x'(t)=x(t)+ay(t)\\), \\(y'(t)=x(t)\\) for alle reelle verdier av parameteren \\(a\\).",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-iii",
+      "subtopicSlug": "systemer-av-differensialligninger",
+      "hiddenDifficultyScore": 5,
+      "estimatedMinutes": 18,
+      "pdfPageRef": "s. 3, oppgave 9",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "10",
+      "title": "Lineærtransformasjon på matriser og egenrom",
+      "problemText": "La \\(T:M_3\\to M_3\\) være gitt ved \\(T(A)=A+A^T\\). Vis at \\(T\\) er lineær, finn egenrommene for egenverdiene \\(0\\) og \\(2\\), bestem dimensjonene, og avgjør om andre egenverdier finnes.",
+      "solutionText": null,
+      "topicSlug": "lineaertransformasjoner-i",
+      "subtopicSlug": "kjerne",
+      "hiddenDifficultyScore": 5,
+      "estimatedMinutes": 18,
+      "pdfPageRef": "s. 3, oppgave 10",
+      "isSeedMock": false
+    }
+  ]
+}

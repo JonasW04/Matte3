@@ -1,0 +1,61 @@
+{
+  "source": {
+    "courseCode": "TMA4100",
+    "year": 2019,
+    "semester": "Kont",
+    "language": "Nynorsk",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2019k.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/lf_tma4100_2019k.pdf",
+    "notes": "Relevante TMA4100-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "3",
+      "title": "Feilestimat for Simpsons metode",
+      "problemText": "For et integral \\(\\int_1^2 f(x)\\,dx\\) med \\(|f^{(4)}(x)|\\le 1\\), bestem hvor stor \\(n\\) må være for at Simpsons-feilen blir garantert mindre enn \\(10^{-9}\\).",
+      "solutionText": null,
+      "topicSlug": "numerisk-integrasjon",
+      "subtopicSlug": "simpsons-metode",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "s. 1, oppgave 3",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "5",
+      "title": "Lineært initialverdiproblem med integrerende faktor",
+      "problemText": "Løs initialverdiproblemet \\(y'+4x^3y=x^3\\), \\(y(0)=1\\).",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-i",
+      "subtopicSlug": "lineaere-differensialligninger",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 1, oppgave 5",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "7a",
+      "title": "Konvergens av positiv rekke",
+      "problemText": "Avgjør om rekken \\(\\sum_{n=1}^{\\infty} n/\\sqrt{n^5+1}\\) konvergerer eller divergerer.",
+      "solutionText": null,
+      "topicSlug": "rekker-i",
+      "subtopicSlug": "konvergenstester",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 8,
+      "pdfPageRef": "s. 1, oppgave 7 i)",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "7b",
+      "title": "Konvergensintervall for potensrekke",
+      "problemText": "Avgjør hvilke verdier av \\(x\\) som gjør at \\(\\sum_{n=1}^{\\infty}(x+2)^n/(n3^n)\\) konvergerer.",
+      "solutionText": null,
+      "topicSlug": "rekker-ii",
+      "subtopicSlug": "konvergensradius",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 1, oppgave 7 ii)",
+      "isSeedMock": false
+    }
+  ]
+}

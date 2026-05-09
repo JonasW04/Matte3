@@ -1,0 +1,49 @@
+{
+  "source": {
+    "courseCode": "TMA4100",
+    "year": 2019,
+    "semester": "Høst",
+    "language": "Bokmål",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2019h.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/lf_tma4100_2019h.pdf",
+    "notes": "Relevante TMA4100-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "5",
+      "title": "Taylorpolynom med restleddsestimat",
+      "problemText": "Finn andregradstaylorpolynomet om \\(a=0\\) til \\(f(x)=e^x/(1-x^2)\\), og bruk en oppgitt øvre grense for \\(|f'''(x)|\\) til å finne hvor feilen er høyst \\(10^{-6}\\).",
+      "solutionText": null,
+      "topicSlug": "taylorrekker-og-taylorpolynom",
+      "subtopicSlug": "restleddet",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 1, oppgave 5",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "8",
+      "title": "Førsteordens initialverdiproblem",
+      "problemText": "Løs initialverdiproblemet \\(y(x)=(x+1)(y'(x)-x)\\), \\(y(0)=4\\), for \\(x>-1\\).",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-i",
+      "subtopicSlug": "lineaere-differensialligninger",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 2, oppgave 8",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "9",
+      "title": "Absolutt, betinget eller divergent for tre rekker",
+      "problemText": "Avgjør om tre oppgitte rekker er absolutt konvergente, betinget konvergente eller divergente, blant annet en positiv trigonometrisk rekke og to alternerende rekker.",
+      "solutionText": null,
+      "topicSlug": "rekker-i",
+      "subtopicSlug": "absolutt-konvergens",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 2, oppgave 9",
+      "isSeedMock": false
+    }
+  ]
+}

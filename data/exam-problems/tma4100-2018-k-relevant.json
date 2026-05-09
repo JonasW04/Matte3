@@ -1,0 +1,49 @@
+{
+  "source": {
+    "courseCode": "TMA4100",
+    "year": 2018,
+    "semester": "Kont",
+    "language": "Nynorsk",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2018k.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/lf_tma4100_2018k.pdf",
+    "notes": "Relevante TMA4100-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "6",
+      "title": "Geometrisk rekke med parameter",
+      "problemText": "Finn hvilke \\(x\\)-verdier som gir konvergens for \\(\\sum_{n=1}^{\\infty}(2|x|-3)^n\\), og skriv summen som en funksjon av \\(x\\).",
+      "solutionText": null,
+      "topicSlug": "rekker-i",
+      "subtopicSlug": "geometriske-rekker",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 1, oppgave 6",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "7",
+      "title": "Parameterkrav for konvergens av rekke",
+      "problemText": "Vis at rekken \\(\\sum_{n=1}^{\\infty} n/(1+n^2)^p\\) konvergerer for \\(p>1\\), og avgjør hva som skjer når \\(p=1\\).",
+      "solutionText": null,
+      "topicSlug": "rekker-i",
+      "subtopicSlug": "konvergenstester",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 1, oppgave 7",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "8",
+      "title": "Integralform gir lineær differensialligning",
+      "problemText": "Vis at en funksjon gitt ved en integralidentitet løser \\(y'+e^xy=e^x\\), og bruk dette til å finne \\(y(x)\\).",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-i",
+      "subtopicSlug": "lineaere-differensialligninger",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 2, oppgave 8",
+      "isSeedMock": false
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "source": {
+    "courseCode": "TMA4100",
+    "year": 2020,
+    "semester": "Høst",
+    "language": "Bokmål",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2020h.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/lf_tma4100_2020h.pdf",
+    "notes": "Relevante TMA4100-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "3",
+      "title": "Koble lineære initialverdiproblem med løsninger",
+      "problemText": "Koble fire førsteordens lineære initialverdiproblem med riktige eksplisitte løsninger på formen \\(1-e^{-x^3/3}\\), \\(e^{-x^3/3}-1\\), \\(1-e^{x^3/3}\\) og \\(e^{x^3/3}-1\\).",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-i",
+      "subtopicSlug": "lineaere-differensialligninger",
+      "hiddenDifficultyScore": 2,
+      "estimatedMinutes": 8,
+      "pdfPageRef": "s. 2, oppgave 3",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "8",
+      "title": "Taylorrekke for integral av potensrekke",
+      "problemText": "Finn taylorrekken om \\(x=0\\) til en funksjon \\(g\\) definert som et integral av en oppgitt potensrekke \\(f(x)=\\sum_{n=0}^{\\infty}4(n+1)x^{2n+1}\\).",
+      "solutionText": null,
+      "topicSlug": "taylorrekker-og-taylorpolynom",
+      "subtopicSlug": "taylorrekker",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 3, oppgave 8",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "10",
+      "title": "Modeller demning med differensialligning",
+      "problemText": "Sett opp og løs en differensialligning for vannmengden i en demning med konstant tilsig og proporsjonalt utslipp, og finn tiden til demningen er halvfull.",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-i",
+      "subtopicSlug": "differensialligninger",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 3, oppgave 10",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "11",
+      "title": "Rekursiv følge og grenseverdi",
+      "problemText": "Vis at følgen definert ved \\(a_1=10\\) og \\(a_{n+1}=a_n/2+1/(2a_n)\\) konvergerer, og finn grenseverdien.",
+      "solutionText": null,
+      "topicSlug": "rekker-i",
+      "subtopicSlug": "rekker",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 4, oppgave 11",
+      "isSeedMock": false
+    }
+  ]
+}

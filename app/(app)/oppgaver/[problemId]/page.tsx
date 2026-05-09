@@ -64,10 +64,8 @@ export default async function ProblemPage({
 
   if (fromAdaptive) {
     const recommendations = await getAdaptiveRecommendations(user.id, DEFAULT_ADAPTIVE_RECOMMENDATION_LIMIT);
-    const nextAdaptiveProblemId = getNextId(
-      recommendations.map((item) => ({ id: item.problem.id })),
-      problem.id
-    );
+    const nextAdaptiveProblemId =
+      recommendations.find((item) => item.problem.id !== problem.id)?.problem.id ?? null;
     if (nextAdaptiveProblemId) {
       nextHref = `/oppgaver/${nextAdaptiveProblemId}?from=adaptiv`;
     }
@@ -102,7 +100,11 @@ export default async function ProblemPage({
     });
     const visibleProblems = showCompletedInTopic
       ? topicProblems
-      : topicProblems.filter((topicProblem) => resolveStatus(topicProblem.progress[0]) !== ProgressStatus.SOLVED);
+      : topicProblems.filter(
+          (topicProblem) =>
+            topicProblem.id === problem.id ||
+            resolveStatus(topicProblem.progress[0]) !== ProgressStatus.SOLVED
+        );
     const nextTopicProblemId = getNextId(visibleProblems, problem.id);
     if (nextTopicProblemId) {
       nextHref = `/oppgaver/${nextTopicProblemId}?from=tema&topic=${topicSlug}${showCompletedInTopic ? "&fullforte=1" : ""}`;

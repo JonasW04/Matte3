@@ -1,0 +1,97 @@
+{
+  "source": {
+    "courseCode": "TMA4110",
+    "year": 2018,
+    "semester": "Høst",
+    "language": "Bokmål",
+    "examPdfUrl": "http://www.math.ntnu.no/emner/TMA4110/eksamen/tma4110-2018h-nb.pdf",
+    "solutionPdfUrl": "https://www.math.ntnu.no/emner/TMA4110/2018h/eksamen/tma4110-2018h-lf.pdf",
+    "notes": "Relevante TMA4110-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "2",
+      "title": "Lineær uavhengighet og spenn",
+      "problemText": "Avgjør om tre vektorer i \\(\\mathbb R^3\\) er lineært uavhengige, og om en gitt vektor er en lineærkombinasjon av dem.",
+      "solutionText": null,
+      "topicSlug": "vektorrom-i",
+      "subtopicSlug": "lineaer-uavhengighet",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "oppgave 2",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "3",
+      "title": "System av differensialligninger og fasediagram",
+      "problemText": "Finn generell løsning av et todimensjonalt lineært system av differensialligninger, og skisser fasediagrammet.",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-iii",
+      "subtopicSlug": "systemer-av-differensialligninger",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "oppgave 3",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "4",
+      "title": "Interpolasjon og minste kvadraters linje",
+      "problemText": "Finn andregradspolynomet som går gjennom tre punkter, og bruk minste kvadraters metode til å finne førstegradspolynomet som passer best.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "minste-kvadraters-metode",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "oppgave 4",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "6",
+      "title": "Ortogonal basis i \\(\\mathbb R^4\\)",
+      "problemText": "Finn en ortogonal basis for underrommet av \\(\\mathbb R^4\\) som er utspent av fire gitte vektorer.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "gram-schmidt",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 16,
+      "pdfPageRef": "oppgave 6",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "8",
+      "title": "Nullrom og kolonnerom over \\(\\mathbb C\\)",
+      "problemText": "For en kompleks \\(3\\times3\\)-matrise: finn basis for nullrommet og kolonnerommet, og finn alle enhetsvektorer i nullrommet.",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "komplekse-vektorrom",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 16,
+      "pdfPageRef": "oppgave 8",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "9",
+      "title": "Kjerne og bilde for transformasjon på matriser",
+      "problemText": "La \\(T:M_2\\to M_2\\) være gitt ved \\(T(M)=M-M^T\\). Vis at \\(T\\) er lineær, og finn \\(\\ker T\\) og \\(\\operatorname{im}T\\).",
+      "solutionText": null,
+      "topicSlug": "lineaertransformasjoner-i",
+      "subtopicSlug": "kjerne",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "oppgave 9",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "10",
+      "title": "Kansellering med lineært uavhengige kolonner",
+      "problemText": "La \\(A\\) være en \\(m\\times n\\)-matrise med lineært uavhengige kolonner, og la \\(B\\) og \\(C\\) være \\(n\\times p\\)-matriser. Vis at \\(AB=AC\\) impliserer \\(B=C\\).",
+      "solutionText": null,
+      "topicSlug": "lineaertransformasjoner-i",
+      "subtopicSlug": "kjerne",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "oppgave 10",
+      "isSeedMock": false
+    }
+  ]
+}

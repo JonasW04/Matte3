@@ -1,0 +1,85 @@
+{
+  "source": {
+    "courseCode": "TMA4110",
+    "year": 2019,
+    "semester": "Vår",
+    "language": "Bokmål",
+    "examPdfUrl": "https://www.math.ntnu.no/emner/TMA4115/2019v/eksamen/TMA4115_vaar2019_endelig_versjon_bokmaal.pdf",
+    "solutionPdfUrl": "https://www.math.ntnu.no/emner/TMA4115/2019v/eksamen/TMA4115_vaar2019_losningsforslag.pdf",
+    "notes": "Relevante TMA4110/TMA4115-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "1a",
+      "title": "Basis for kolonnerom og nullrom",
+      "problemText": "Finn basiser for kolonnerommet og nullrommet til en gitt matrise.",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "basis",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "oppgave 1a",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "2",
+      "title": "Minste kvadrater og ortogonal projeksjon",
+      "problemText": "Finn et andregradspolynom gjennom fire punkter, bruk minste kvadraters metode til å finne beste rette linje, og bestem ortogonal projeksjon av en vektor ned på et kolonnerom.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "minste-kvadraters-metode",
+      "hiddenDifficultyScore": 5,
+      "estimatedMinutes": 22,
+      "pdfPageRef": "oppgave 2",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "3",
+      "title": "Definisjon og bevis for lineær uavhengighet",
+      "problemText": "Skriv definisjonen av lineær uavhengighet, og bruk den til å vise at to gitte vektorer i \\(\\mathbb R^4\\) er lineært uavhengige.",
+      "solutionText": null,
+      "topicSlug": "vektorrom-i",
+      "subtopicSlug": "lineaer-uavhengighet",
+      "hiddenDifficultyScore": 2,
+      "estimatedMinutes": 8,
+      "pdfPageRef": "oppgave 3",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "4",
+      "title": "Konstruer ODE-system fra generell løsning",
+      "problemText": "Finn et lineært system \\(y'(t)=Ay(t)\\) som har en oppgitt generell løsning uttrykt ved to egenvektorer og eksponentialledd, og skisser fasediagrammet.",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-iii",
+      "subtopicSlug": "systemer-av-differensialligninger",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "oppgave 4",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "6",
+      "title": "Lineærkombinasjon og ortogonalitet i polynomrom",
+      "problemText": "Avgjør om et polynom kan skrives som lineærkombinasjon av to andre polynomer, og avgjør om to polynomer er ortogonale med hensyn til et integralindreprodukt.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-i",
+      "subtopicSlug": "ortogonalitet",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "oppgave 6",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "7",
+      "title": "Projeksjonsmatrise og egenverdier",
+      "problemText": "Vis at en koordinatprojeksjon er en lineærtransformasjon, finn standardmatrisen, vis at den er en projeksjonsmatrise, og analyser egenverdier for generelle projeksjonsmatriser.",
+      "solutionText": null,
+      "topicSlug": "lineaertransformasjoner-ii",
+      "subtopicSlug": "matriserepresentasjon",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 16,
+      "pdfPageRef": "oppgave 7",
+      "isSeedMock": false
+    }
+  ]
+}

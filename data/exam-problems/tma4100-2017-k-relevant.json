@@ -1,0 +1,61 @@
+{
+  "source": {
+    "courseCode": "TMA4100",
+    "year": 2017,
+    "semester": "Kont",
+    "language": "Nynorsk",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2017k.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/lf_tma4100_2017k.pdf",
+    "notes": "Relevante TMA4100-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "2",
+      "title": "Taylorpolynom av grad tre",
+      "problemText": "Finn Taylor-polynomet av grad 3 om \\(a=0\\) til \\(f(x)=\\arctan(x^2)-6\\sin(\\pi x)\\).",
+      "solutionText": null,
+      "topicSlug": "taylorrekker-og-taylorpolynom",
+      "subtopicSlug": "taylorpolynom",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "s. 1, oppgave 2",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "5",
+      "title": "Lineær differensialligning med integrerende faktor",
+      "problemText": "Løs initialverdiproblemet \\(dy/dx+(4/x)y=5e^{x^5+1}+15\\), \\(y(1)=3\\), for \\(x>0\\).",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-i",
+      "subtopicSlug": "lineaere-differensialligninger",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 1, oppgave 5",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "7",
+      "title": "Potensrekke med endepunktsanalyse",
+      "problemText": "Vis at \\(\\sum_{n=0}^{\\infty}\\frac{(-1)^n}{2n+1}x^{n+1}\\) har konvergensradius \\(R=1\\), og avgjør konvergens for \\(x=\\pm1\\).",
+      "solutionText": null,
+      "topicSlug": "rekker-ii",
+      "subtopicSlug": "konvergensradius",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 2, oppgave 7",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "8",
+      "title": "Eksponentialrekke og feilestimat",
+      "problemText": "Bruk rekken for \\(e^{-x^2/4}\\) til å approksimere \\(\\int_0^1 e^{-x^2/4}\\,dx\\) med garantert feil mindre enn \\(0.0005\\).",
+      "solutionText": null,
+      "topicSlug": "rekker-ii",
+      "subtopicSlug": "operasjoner-pa-rekker",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 2, oppgave 8",
+      "isSeedMock": false
+    }
+  ]
+}

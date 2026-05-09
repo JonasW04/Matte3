@@ -1,0 +1,61 @@
+{
+  "source": {
+    "courseCode": "TMA4100",
+    "year": 2020,
+    "semester": "Kont",
+    "language": "Nynorsk",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2020k.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/lf_tma4100_2020k.pdf",
+    "notes": "Relevante TMA4100-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "4",
+      "title": "Simpsons metode og feilgrense",
+      "problemText": "Bruk Simpsons metode med fire delintervall til å approksimere \\(\\int_0^\\pi \\cos(x^2)\\,dx\\), og bestem hvor stor \\(n\\) må være for garantert feil mindre enn \\(10^{-3}\\).",
+      "solutionText": null,
+      "topicSlug": "numerisk-integrasjon",
+      "subtopicSlug": "simpsons-metode",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 16,
+      "pdfPageRef": "s. 1, oppgave 4",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "5",
+      "title": "Sammenlign integral og rekke",
+      "problemText": "Avgjør konvergens for et uegentlig integral og den tilhørende rekken med ledd av typen \\(1/\\sqrt{n(n+1)}\\).",
+      "solutionText": null,
+      "topicSlug": "rekker-i",
+      "subtopicSlug": "konvergenstester",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 1, oppgave 5",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "6",
+      "title": "Maclaurinrekke og konvergensradius",
+      "problemText": "Finn maclaurinrekken til \\(f(x)=x/(x^2+9)\\), og begrunn konvergensradien.",
+      "solutionText": null,
+      "topicSlug": "rekker-ii",
+      "subtopicSlug": "konvergensradius",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "s. 1, oppgave 6",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "10",
+      "title": "Saltblanding som lineær differensialligning",
+      "problemText": "Modeller en blandingstank med inn- og utstrømning som et førsteordens lineært initialverdiproblem, og finn saltmengden etter 60 minutter.",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-i",
+      "subtopicSlug": "lineaere-differensialligninger",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 2, oppgave 10",
+      "isSeedMock": false
+    }
+  ]
+}

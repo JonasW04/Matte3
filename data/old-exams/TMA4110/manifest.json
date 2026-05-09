@@ -88,5 +88,95 @@
     "fileName": "10-2022-kont-bm.pdf",
     "relativePath": "data/old-exams/TMA4110/10-2022-kont-bm.pdf",
     "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
+  },
+  {
+    "label": "2022-var-BM",
+    "url": "https://www.math.ntnu.no/emner/TMA4115/2022v/Diverse/EksamenTMA4115Vår2022-BM.pdf",
+    "year": 2022,
+    "term": "var",
+    "fileName": "11-2022-var-bm.pdf",
+    "relativePath": "data/old-exams/TMA4110/11-2022-var-bm.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
+  },
+  {
+    "label": "2021-host-BM",
+    "url": "https://www.math.ntnu.no/emner/TMA4110/2021h/eksamen/Bokmaal/tma4110-eksamen-h21-bokmaal.pdf",
+    "year": 2021,
+    "term": "host",
+    "fileName": "12-2021-host-bm.pdf",
+    "relativePath": "data/old-exams/TMA4110/12-2021-host-bm.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
+  },
+  {
+    "label": "2021-kont-BM",
+    "url": "https://www.math.ntnu.no/emner/TMA4115/2021v/eksamen/eksamen-TMA4110-TMA4115-2021Kont.pdf",
+    "year": 2021,
+    "term": "kont",
+    "fileName": "13-2021-kont-bm.pdf",
+    "relativePath": "data/old-exams/TMA4110/13-2021-kont-bm.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
+  },
+  {
+    "label": "2020-host-BM",
+    "url": "https://www.math.ntnu.no/emner/TMA4110/2020h/eksamen/TMA4110_h2020.pdf",
+    "year": 2020,
+    "term": "host",
+    "fileName": "14-2020-host-bm.pdf",
+    "relativePath": "data/old-exams/TMA4110/14-2020-host-bm.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
+  },
+  {
+    "label": "2020-kont-BM",
+    "url": "https://www.math.ntnu.no/emner/TMA4110/eksamen/TMA4110_TMA4115_kont_2020_bokmaal.pdf",
+    "year": 2020,
+    "term": "kont",
+    "fileName": "15-2020-kont-bm.pdf",
+    "relativePath": "data/old-exams/TMA4110/15-2020-kont-bm.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
+  },
+  {
+    "label": "2020-var-BM",
+    "url": "https://www.math.ntnu.no/emner/TMA4115/2020v/eksamen/Eksamen_TMA4115_Bokmål.pdf",
+    "year": 2020,
+    "term": "var",
+    "fileName": "16-2020-var-bm.pdf",
+    "relativePath": "data/old-exams/TMA4110/16-2020-var-bm.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
+  },
+  {
+    "label": "2019-host-BM",
+    "url": "https://www.math.ntnu.no/emner/TMA4110/eksamen/TMA4110_host_2019_bokmaal.pdf",
+    "year": 2019,
+    "term": "host",
+    "fileName": "17-2019-host-bm.pdf",
+    "relativePath": "data/old-exams/TMA4110/17-2019-host-bm.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
+  },
+  {
+    "label": "2019-kont-BM",
+    "url": "https://www.math.ntnu.no/emner/TMA4115/2019v/eksamen/TMA4110_TMA4115_kont_sommer2019_bokmaal.pdf",
+    "year": 2019,
+    "term": "kont",
+    "fileName": "18-2019-kont-bm.pdf",
+    "relativePath": "data/old-exams/TMA4110/18-2019-kont-bm.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
+  },
+  {
+    "label": "2019-var-BM",
+    "url": "https://www.math.ntnu.no/emner/TMA4115/2019v/eksamen/TMA4115_vaar2019_endelig_versjon_bokmaal.pdf",
+    "year": 2019,
+    "term": "var",
+    "fileName": "19-2019-var-bm.pdf",
+    "relativePath": "data/old-exams/TMA4110/19-2019-var-bm.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
+  },
+  {
+    "label": "2018-host-BM",
+    "url": "http://www.math.ntnu.no/emner/TMA4110/eksamen/tma4110-2018h-nb.pdf",
+    "year": 2018,
+    "term": "host",
+    "fileName": "20-2018-host-bm.pdf",
+    "relativePath": "data/old-exams/TMA4110/20-2018-host-bm.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4110/2025h/eksamensoppgaver"
   }
 ]

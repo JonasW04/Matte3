@@ -1,0 +1,61 @@
+{
+  "source": {
+    "courseCode": "TMA4100",
+    "year": 2016,
+    "semester": "Høst",
+    "language": "Nynorsk",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2016h.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/lf_tma4100_2016h.pdf",
+    "notes": "Relevante TMA4100-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "6",
+      "title": "Taylorpolynom for integraldefinert funksjon",
+      "problemText": "Finn Taylor-polynomet av grad 2 om \\(a=\\pi/2\\) for funksjonen \\(f(x)=\\int_0^x 2t\\sin(\\pi-t)\\,dt\\).",
+      "solutionText": null,
+      "topicSlug": "taylorrekker-og-taylorpolynom",
+      "subtopicSlug": "taylorpolynom",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 1, oppgave 6",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "7",
+      "title": "Absolutt, betinget eller divergent",
+      "problemText": "Avgjør om tre rekker er absolutt konvergente, betinget konvergente eller divergente, blant annet en alternerende logaritmisk rekke og rekker med rasjonale ledd.",
+      "solutionText": null,
+      "topicSlug": "rekker-i",
+      "subtopicSlug": "absolutt-konvergens",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 2, oppgave 7",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "8",
+      "title": "Simpsons metode for buelengde",
+      "problemText": "Bruk Simpsons metode med fire delintervall til å finne en tilnærming til buelengden av grafen \\(y=\\sin(x^2)\\) fra \\(x=0\\) til \\(x=1\\).",
+      "solutionText": null,
+      "topicSlug": "numerisk-integrasjon",
+      "subtopicSlug": "simpsons-metode",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 2, oppgave 8",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "9",
+      "title": "Lineært initialverdiproblem",
+      "problemText": "Løs initialverdiproblemet \\(dy/dx=(y-1)/(x^3-2x^2+2x)\\), \\(y(1)=0\\), for \\(x>0\\).",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-i",
+      "subtopicSlug": "lineaere-differensialligninger",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "s. 2, oppgave 9",
+      "isSeedMock": false
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "source": {
+    "courseCode": "TMA4110",
+    "year": 2020,
+    "semester": "Kont",
+    "language": "Bokmål",
+    "examPdfUrl": "https://www.math.ntnu.no/emner/TMA4110/eksamen/TMA4110_TMA4115_kont_2020_bokmaal.pdf",
+    "solutionPdfUrl": "https://www.math.ntnu.no/emner/TMA4110/eksamen/TMA4110_TMA4115_kont_2020_lf.pdf",
+    "notes": "Relevante TMA4110/TMA4115-oppgaver for TMA4422. Dette er et flervalgssett der tekstuttrekket fra PDF er ufullstendig; problemtekstene er derfor ekstra korte og bør kvalitetssikres mot examPdfUrl før større import."
+  },
+  "problems": [
+    {
+      "problemNumber": "31-32",
+      "title": "Minste kvadraters linje og andregradspolynom",
+      "problemText": "Ta utgangspunkt i et gitt datasett. Velg linjen som passer best til punktene med minste kvadraters metode, og velg andregradspolynomet som interpolerer punktene.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "minste-kvadraters-metode",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 8,
+      "pdfPageRef": "oppgave 31-32",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "40",
+      "title": "Langtidsoppførsel for stokastisk matrise",
+      "problemText": "Modeller valg mellom tre tilstander som en stokastisk matrise, og avgjør fordelingen i det lange løp fra overgangssannsynlighetene.",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "egenverdier-og-egenvektorer",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "oppgave 40",
+      "isSeedMock": false
+    }
+  ]
+}

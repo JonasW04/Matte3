@@ -1,0 +1,61 @@
+{
+  "source": {
+    "courseCode": "TMA4110",
+    "year": 2020,
+    "semester": "Høst",
+    "language": "Bokmål",
+    "examPdfUrl": "https://www.math.ntnu.no/emner/TMA4110/2020h/eksamen/TMA4110_h2020.pdf",
+    "solutionPdfUrl": "https://www.math.ntnu.no/emner/TMA4110/2020h/eksamen/TMA4110_h2020.pdf",
+    "notes": "Relevante TMA4110-oppgaver for TMA4422. Denne PDF-en inneholder oppgaver og løsningsforslag. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "7",
+      "title": "Komplekse tall som reelt vektorrom",
+      "problemText": "Betrakt \\(\\mathbb C\\) som et reelt vektorrom. Vis at to gitte komplekse tall danner en basis for \\(\\mathbb C\\), og bruk koordinater i denne basisen.",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "komplekse-vektorrom",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 15,
+      "pdfPageRef": "oppgave 7",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "8",
+      "title": "Eksempler på matriser med bestemte egenskaper",
+      "problemText": "Gi eksempler på reelle eller komplekse \\(2\\times2\\)-matriser med bestemte egenskaper knyttet til egenverdier, radekvivalens og diagonaliserbarhet, og forklar hvorfor eksemplene virker.",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "egenverdier-og-egenvektorer",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "oppgave 8",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "9",
+      "title": "Egenverdier for \\(I-buu^T\\)",
+      "problemText": "La \\(u\\in\\mathbb R^n\\) være enhetsvektor og \\(A=I_n-buu^T\\). Finn egenverdien til \\(u\\), finn egenvektorene for egenverdien \\(1\\), og analyser spekteret til \\(A\\).",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "egenverdier-og-egenvektorer",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "oppgave 9",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "10",
+      "title": "Derivasjon som lineærtransformasjon",
+      "problemText": "La \\(U=\\operatorname{span}\\{te^{at},e^{at},e^t\\}\\) og \\(D:U\\to U\\) være derivasjon. Finn matriserepresentasjonen til \\(D\\) i en gitt basis, og analyser transformasjonen.",
+      "solutionText": null,
+      "topicSlug": "lineaertransformasjoner-ii",
+      "subtopicSlug": "matriserepresentasjon",
+      "hiddenDifficultyScore": 5,
+      "estimatedMinutes": 18,
+      "pdfPageRef": "oppgave 10",
+      "isSeedMock": false
+    }
+  ]
+}

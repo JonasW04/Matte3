@@ -1,0 +1,73 @@
+{
+  "source": {
+    "courseCode": "TMA4110",
+    "year": 2021,
+    "semester": "Kont",
+    "language": "Bokmål",
+    "examPdfUrl": "https://www.math.ntnu.no/emner/TMA4115/2021v/eksamen/eksamen-TMA4110-TMA4115-2021Kont.pdf",
+    "solutionPdfUrl": "https://www.math.ntnu.no/emner/TMA4115/2021v/eksamen/eksamen-TMA4110-TMA4115-2021Kont.pdf",
+    "notes": "Relevante TMA4110/TMA4115-oppgaver for TMA4422. Denne PDF-en inneholder oppgaver og løsningsforslag. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "6",
+      "title": "Parameteravhengig kolonnerom og nullrom",
+      "problemText": "For en parameteravhengig \\(3\\times3\\)-matrise: bestem når matrisen er inverterbar, finn en basis for kolonnerommet og dimensjonen til nullrommet for alle parameterverdier, og diskuter løsningsmengden til \\(Ax=b\\).",
+      "solutionText": null,
+      "topicSlug": "vektorrom-ii",
+      "subtopicSlug": "basis",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 18,
+      "pdfPageRef": "oppgave 6",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "7",
+      "title": "Lineærtransformasjon fra matriser til polynomer",
+      "problemText": "La \\(T:M_2\\to P_3\\) være en lineærtransformasjon gitt ved koeffisienter fra en \\(2\\times2\\)-matrise. Finn standardmatrisen, en basis for bildet og kjernen, og avgjør injektivitet og surjektivitet.",
+      "solutionText": null,
+      "topicSlug": "lineaertransformasjoner-i",
+      "subtopicSlug": "kjerne",
+      "hiddenDifficultyScore": 5,
+      "estimatedMinutes": 20,
+      "pdfPageRef": "oppgave 7",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "8",
+      "title": "Ortonormal basis og projeksjon i trigonometrisk rom",
+      "problemText": "I \\(C([0,2\\pi])\\) med normalisert integralindreprodukt: finn en ortonormal basis for \\(\\operatorname{span}\\{\\cos x,\\sin x\\}\\), projiser \\(f(x)=x\\) ned på underrommet, og finn koordinater for \\(\\cos(x+\\pi/4)\\).",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "projeksjon",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 18,
+      "pdfPageRef": "oppgave 8",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "9",
+      "title": "Ortonormal basis, nærmeste punkt og rotasjon",
+      "problemText": "Beskriv et underrom \\(U\\subset\\mathbb R^3\\) geometrisk, finn en ligning for \\(U\\), finn en ortonormal basis og nærmeste punkt til en gitt vektor, og analyser en rotasjon som lineærtransformasjon.",
+      "solutionText": null,
+      "topicSlug": "indreproduktrom-ii",
+      "subtopicSlug": "projeksjon",
+      "hiddenDifficultyScore": 5,
+      "estimatedMinutes": 22,
+      "pdfPageRef": "oppgave 9",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "10",
+      "title": "Parametrisk system av differensialligninger",
+      "problemText": "Analyser systemet \\(x'(t)=ax+y\\), \\(y'(t)=x\\): bestem dimensjonen til løsningsrommet for alle \\(a\\), finn rette linjeløsninger, og beskriv bevegelsen når \\(t\\) øker.",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-iii",
+      "subtopicSlug": "systemer-av-differensialligninger",
+      "hiddenDifficultyScore": 5,
+      "estimatedMinutes": 18,
+      "pdfPageRef": "oppgave 10",
+      "isSeedMock": false
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { mkdir, readdir, unlink, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 type CourseConfig = {
@@ -21,10 +21,18 @@ type DownloadedExam = ExamCandidate & {
   sourcePage: string;
 };
 
+type DownloadOptions = {
+  limit: number;
+  offset: number;
+  append: boolean;
+  dryRun: boolean;
+  courseCodes: Set<CourseConfig["courseCode"]> | null;
+};
+
 const ROOT = process.cwd();
 const OUTPUT_ROOT = path.join(ROOT, "data", "old-exams");
 const WIKI_ORIGIN = "https://wiki.math.ntnu.no";
-const MAX_EXAMS_PER_COURSE = 10;
+const DEFAULT_EXAMS_PER_COURSE = 10;
 
 const COURSES: CourseConfig[] = [
   {
@@ -45,22 +53,46 @@ const COURSES: CourseConfig[] = [
 ];
 
 async function main() {
+  const options = parseArgs(process.argv.slice(2));
   await mkdir(OUTPUT_ROOT, { recursive: true });
 
-  for (const course of COURSES) {
+  for (const course of COURSES.filter((item) => !options.courseCodes || options.courseCodes.has(item.courseCode))) {
     const html = await fetchText(course.sourcePage);
-    const candidates = uniqueByUrl(course.rowParser(html))
-      .sort(compareNewestFirst)
-      .slice(0, MAX_EXAMS_PER_COURSE);
+    const candidates = uniqueByUrl(course.rowParser(html)).sort(compareNewestFirst);
+    const selected = candidates.slice(options.offset, options.offset + options.limit);
 
     const courseDir = path.join(OUTPUT_ROOT, course.courseCode);
-    await prepareCourseDir(courseDir);
+    await mkdir(courseDir, { recursive: true });
+    const manifest: DownloadedExam[] = options.append ? await readManifest(courseDir) : [];
+    const existingUrls = new Set(manifest.map((entry) => entry.url));
 
-    const manifest: DownloadedExam[] = [];
-    for (const [index, candidate] of candidates.entries()) {
-      const fileName = `${String(index + 1).padStart(2, "0")}-${slugify(candidate.label)}.pdf`;
+    if (!options.append && !options.dryRun) {
+      await emptyCourseDir(courseDir);
+    }
+
+    console.log(`${course.courseCode}: fant ${candidates.length} eksamenskandidater, velger ${selected.length} fra offset ${options.offset}.`);
+
+    for (const [index, candidate] of selected.entries()) {
+      if (existingUrls.has(candidate.url)) {
+        console.log(`${course.courseCode}: finnes allerede ${candidate.label}`);
+        continue;
+      }
+
+      const fileName = `${String(options.offset + index + 1).padStart(2, "0")}-${slugify(candidate.label)}.pdf`;
       const filePath = path.join(courseDir, fileName);
-      await downloadPdf(candidate.url, filePath);
+
+      if (options.dryRun) {
+        console.log(`${course.courseCode}: [dry-run] ville lastet ned ${fileName}`);
+        continue;
+      }
+
+      try {
+        await downloadPdf(candidate.url, filePath);
+      } catch (error) {
+        console.warn(`${course.courseCode}: hoppet over ${candidate.label}: ${error instanceof Error ? error.message : String(error)}`);
+        continue;
+      }
+
       manifest.push({
         ...candidate,
         fileName,
@@ -70,8 +102,81 @@ async function main() {
       console.log(`${course.courseCode}: lastet ned ${fileName}`);
     }
 
-    await writeFile(path.join(courseDir, "manifest.json"), JSON.stringify(manifest, null, 2) + "\n", "utf8");
+    if (!options.dryRun) {
+      const sortedManifest = manifest.sort(compareNewestFirst);
+      await writeFile(path.join(courseDir, "manifest.json"), JSON.stringify(sortedManifest, null, 2) + "\n", "utf8");
+      console.log(`${course.courseCode}: manifest har nå ${sortedManifest.length} PDF-er.`);
+    }
   }
+}
+
+function parseArgs(args: string[]): DownloadOptions {
+  let limit = DEFAULT_EXAMS_PER_COURSE;
+  let offset = 0;
+  let append = false;
+  let dryRun = false;
+  let courseCodes: Set<CourseConfig["courseCode"]> | null = null;
+
+  for (let index = 0; index < args.length; index += 1) {
+    const arg = args[index];
+    const next = args[index + 1];
+
+    if (arg === "--limit" && next) {
+      limit = Number(next);
+      index += 1;
+      continue;
+    }
+    if (arg === "--offset" && next) {
+      offset = Number(next);
+      index += 1;
+      continue;
+    }
+    if (arg === "--append") {
+      append = true;
+      continue;
+    }
+    if (arg === "--dry-run") {
+      dryRun = true;
+      continue;
+    }
+    if (arg === "--course" && next) {
+      courseCodes = new Set(next.split(",").map((value) => value.trim().toUpperCase()) as CourseConfig["courseCode"][]);
+      index += 1;
+      continue;
+    }
+    if (arg === "--help" || arg === "-h") {
+      printHelp();
+      process.exit(0);
+    }
+    throw new Error(`Ukjent argument: ${arg}`);
+  }
+
+  if (!Number.isInteger(limit) || limit <= 0) {
+    throw new Error("--limit må være et positivt heltall.");
+  }
+  if (!Number.isInteger(offset) || offset < 0) {
+    throw new Error("--offset må være et ikke-negativt heltall.");
+  }
+
+  return { limit, offset, append, dryRun, courseCodes };
+}
+
+function printHelp() {
+  console.log(`Last ned gamle eksamens-PDF-er.
+
+Bruk:
+  npm run exams:download
+  npm run exams:download:more
+  npm run exams:download -- --limit 20
+  npm run exams:download -- --course TMA4110 --offset 10 --limit 10 --append
+
+Valg:
+  --limit <n>         Antall PDF-er per fag. Standard: ${DEFAULT_EXAMS_PER_COURSE}
+  --offset <n>        Hopp over de n nyeste før nedlasting. Bruk 10 for neste bolk.
+  --append            Behold eksisterende filer/manifest og legg til nye treff.
+  --course <codes>    Kommaseparert fagfilter, f.eks. TMA4100,TMA4110.
+  --dry-run           Vis hva som ville blitt lastet ned.
+`);
 }
 
 function parseNorwegianMultiLanguageRows(html: string): ExamCandidate[] {
@@ -145,6 +250,7 @@ function parseTma4130Rows(html: string): ExamCandidate[] {
     const examLabel = stripTags(cells[0]);
     const year = firstYear(examLabel);
     if (!year) continue;
+    if (isTma4130FourDOnly(examLabel)) continue;
 
     const links = getLinks(cells[1]);
     const problemLink = links.find((link) => isLikelyExamPdf(link.url, link.text, { allowSolutionText: true }));
@@ -193,6 +299,11 @@ function normalizeTerm(value: string) {
 
 function isExamTerm(term: string) {
   return term === "host" || term === "var" || term === "kont";
+}
+
+function isTma4130FourDOnly(label: string) {
+  const normalized = normalizeWhitespace(label).toLowerCase();
+  return /\b4d\b/.test(normalized) && !/\b4n\b/.test(normalized);
 }
 
 function isLikelyExamPdf(url: string, text: string, options: { allowSolutionText?: boolean } = {}) {
@@ -274,7 +385,15 @@ async function fetchText(url: string) {
   return response.text();
 }
 
-async function prepareCourseDir(courseDir: string) {
+async function readManifest(courseDir: string): Promise<DownloadedExam[]> {
+  try {
+    return JSON.parse(await readFile(path.join(courseDir, "manifest.json"), "utf8")) as DownloadedExam[];
+  } catch {
+    return [];
+  }
+}
+
+async function emptyCourseDir(courseDir: string) {
   await mkdir(courseDir, { recursive: true });
   const entries = await readdir(courseDir, { withFileTypes: true });
   await Promise.all(

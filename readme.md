@@ -134,3 +134,46 @@ Resultat:
 - `data/old-exams/TMA4130`
 
 Hver mappe får også en `manifest.json` med opprinnelig URL, label og lokal filsti.
+
+For å hente neste bolk med 10 ekstra eksamener per fag uten å slette de eksisterende PDF-ene:
+
+```bash
+npm run exams:download:more
+```
+
+Dette bruker `--offset 10 --limit 10 --append`, slik at mappene ender med 20 PDF-er per fag når de første 10 allerede finnes. Du kan også styre nedlastingen mer presist:
+
+```bash
+npm run exams:download -- --course TMA4110 --offset 20 --limit 10 --append
+npm run exams:download -- --course TMA4130 --limit 20
+npm run exams:download -- --dry-run
+```
+
+## Importer JSON-oppgaver fra script
+
+Når nye oppgave-JSON-er er laget i `data/exam-problems/`, kan de importeres uten å bruke admin-siden:
+
+```bash
+npm run problems:import
+```
+
+Standardimporten:
+
+- leser alle `*-relevant.json` i `data/exam-problems/`
+- upserter tema og undertema først
+- hopper over JSON-er som inneholder `isSeedMock: true`
+- upserter `ExamSource` og `Problem`, slik at samme JSON kan kjøres flere ganger
+
+Importer én bestemt fil:
+
+```bash
+npm run problems:import -- --file data/exam-problems/tma4110-2025-v-relevant.json
+```
+
+Importer til Railway/Postgres ved å bruke public database URL:
+
+```bash
+DATABASE_URL="postgresql://..." npm run problems:import
+```
+
+Ikke bruk `postgres.railway.internal` fra lokal maskin. Den fungerer bare inne i Railway sitt private nettverk.

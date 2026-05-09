@@ -88,5 +88,95 @@
     "fileName": "10-summer-2020-4n-d.pdf",
     "relativePath": "data/old-exams/TMA4130/10-summer-2020-4n-d.pdf",
     "sourcePage": "https://wiki.math.ntnu.no/tma4130/2025h/old_exams"
+  },
+  {
+    "label": "Spring 2020 - 4N",
+    "url": "https://wiki.math.ntnu.no/_media/tma4130/2020h/exam_v20_short.pdf",
+    "year": 2020,
+    "term": "var",
+    "fileName": "11-spring-2020-4n.pdf",
+    "relativePath": "data/old-exams/TMA4130/11-spring-2020-4n.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4130/2025h/old_exams"
+  },
+  {
+    "label": "Autumn 2019 - 4N/D",
+    "url": "https://wiki.math.ntnu.no/_media/tma4130/2020h/unred.pdf",
+    "year": 2019,
+    "term": "host",
+    "fileName": "12-autumn-2019-4n-d.pdf",
+    "relativePath": "data/old-exams/TMA4130/12-autumn-2019-4n-d.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4130/2025h/old_exams"
+  },
+  {
+    "label": "Summer 2019 - 4N/D",
+    "url": "https://wiki.math.ntnu.no/_media/tma4130/2020h/tma4125-30-35-k19-bm.pdf",
+    "year": 2019,
+    "term": "kont",
+    "fileName": "13-summer-2019-4n-d.pdf",
+    "relativePath": "data/old-exams/TMA4130/13-summer-2019-4n-d.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4130/2025h/old_exams"
+  },
+  {
+    "label": "Spring 2019 - 4N",
+    "url": "https://www.math.ntnu.no/emner/TMA4125/2019v/notater/eksamen-TMA4125-v19-BM.pdf",
+    "year": 2019,
+    "term": "var",
+    "fileName": "14-spring-2019-4n.pdf",
+    "relativePath": "data/old-exams/TMA4130/14-spring-2019-4n.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4130/2025h/old_exams"
+  },
+  {
+    "label": "Autumn 2018 - 4N/D",
+    "url": "https://wiki.math.ntnu.no/_media/tma4130/2018h/exam_fall18_tma4130_norsk.pdf",
+    "year": 2018,
+    "term": "host",
+    "fileName": "15-autumn-2018-4n-d.pdf",
+    "relativePath": "data/old-exams/TMA4130/15-autumn-2018-4n-d.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4130/2025h/old_exams"
+  },
+  {
+    "label": "Spring 2018 - 4N",
+    "url": "https://wiki.math.ntnu.no/_media/tma4125/2018v/tma4125_final_exam_may_bm.pdf",
+    "year": 2018,
+    "term": "var",
+    "fileName": "16-spring-2018-4n.pdf",
+    "relativePath": "data/old-exams/TMA4130/16-spring-2018-4n.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4130/2025h/old_exams"
+  },
+  {
+    "label": "Summer 2017 - 4N/D",
+    "url": "https://wiki.math.ntnu.no/_media/tma4130/2017h/kont_bok.pdf",
+    "year": 2017,
+    "term": "kont",
+    "fileName": "17-summer-2017-4n-d.pdf",
+    "relativePath": "data/old-exams/TMA4130/17-summer-2017-4n-d.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4130/2025h/old_exams"
+  },
+  {
+    "label": "Spring 2017 - 4N",
+    "url": "https://wiki.math.ntnu.no/_media/tma4130/2017h/exam.pdf",
+    "year": 2017,
+    "term": "var",
+    "fileName": "18-spring-2017-4n.pdf",
+    "relativePath": "data/old-exams/TMA4130/18-spring-2017-4n.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4130/2025h/old_exams"
+  },
+  {
+    "label": "Autumn 2016 - 4N",
+    "url": "https://wiki.math.ntnu.no/_media/tma4125/2017v/n16h.pdf",
+    "year": 2016,
+    "term": "host",
+    "fileName": "19-autumn-2016-4n.pdf",
+    "relativePath": "data/old-exams/TMA4130/19-autumn-2016-4n.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4130/2025h/old_exams"
+  },
+  {
+    "label": "Summer 2016 - 4N",
+    "url": "https://wiki.math.ntnu.no/_media/tma4130/2016h/english.pdf",
+    "year": 2016,
+    "term": "kont",
+    "fileName": "20-summer-2016-4n.pdf",
+    "relativePath": "data/old-exams/TMA4130/20-summer-2016-4n.pdf",
+    "sourcePage": "https://wiki.math.ntnu.no/tma4130/2025h/old_exams"
   }
 ]

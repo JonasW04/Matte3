@@ -1,0 +1,49 @@
+{
+  "source": {
+    "courseCode": "TMA4100",
+    "year": 2016,
+    "semester": "Kont",
+    "language": "Bokmål",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/tma4100_2016k.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4100/eksamen/lf_tma4100_2016k.pdf",
+    "notes": "Relevante TMA4100-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "2",
+      "title": "Førsteordens lineært initialverdiproblem",
+      "problemText": "Løs initialverdiproblemet \\(dy/dx+(1/x)y=e^x\\), \\(y(1)=4\\), for \\(x>0\\).",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-i",
+      "subtopicSlug": "lineaere-differensialligninger",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "s. 1, oppgave 2",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "4",
+      "title": "Kontinuitet med Taylorutvikling",
+      "problemText": "Bestem verdien \\(h(0)\\) som gjør \\(h(x)=(\\cos x-1+x^2/2)/x^4\\) kontinuerlig i \\(x=0\\).",
+      "solutionText": null,
+      "topicSlug": "taylorrekker-og-taylorpolynom",
+      "subtopicSlug": "taylorrekker",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "s. 1, oppgave 4",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "6",
+      "title": "Konvergensradius for logaritmerekke",
+      "problemText": "Finn konvergensradien til Taylor-rekken for \\(f(x)=\\ln(1+2x)\\) rundt \\(0\\), og begrunn svaret.",
+      "solutionText": null,
+      "topicSlug": "rekker-ii",
+      "subtopicSlug": "konvergensradius",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "s. 1, oppgave 6",
+      "isSeedMock": false
+    }
+  ]
+}
