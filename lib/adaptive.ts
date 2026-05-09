@@ -10,6 +10,8 @@ type AdaptiveProblem = Prisma.ProblemGetPayload<{
   };
 }>;
 
+export const DEFAULT_ADAPTIVE_RECOMMENDATION_LIMIT = 8;
+
 type TopicStat = {
   topicId: string;
   topicName: string;
@@ -53,7 +55,10 @@ function explain(parts: AdaptiveRecommendation["scoreParts"], stat: TopicStat, p
   return `Anbefalt for variasjon i ${stat.topicName.toLowerCase()}.`;
 }
 
-export async function getAdaptiveRecommendations(userId: string, limit = 8): Promise<AdaptiveRecommendation[]> {
+export async function getAdaptiveRecommendations(
+  userId: string,
+  limit = DEFAULT_ADAPTIVE_RECOMMENDATION_LIMIT
+): Promise<AdaptiveRecommendation[]> {
   const problems = await prisma.problem.findMany({
     where: { isSeedMock: false },
     include: {

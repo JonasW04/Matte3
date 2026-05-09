@@ -105,7 +105,12 @@ export default async function TopicPage({
 
       <div className="space-y-3">
         {problems.map((problem) => (
-          <ProblemCard key={problem.id} problem={problem} status={resolveStatus(problem.progress[0])} />
+          <ProblemCard
+            key={problem.id}
+            problem={problem}
+            status={resolveStatus(problem.progress[0])}
+            href={`/oppgaver/${problem.id}?from=tema&topic=${topic.slug}${showCompleted ? "&fullforte=1" : ""}`}
+          />
         ))}
         {problems.length === 0 && (
           <EmptyState title="Ingen oppgaver i denne visningen" text="Slå på fullførte oppgaver eller importer flere eksamensoppgaver for dette temaet." />

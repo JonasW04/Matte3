@@ -62,7 +62,17 @@ export async function viewSolutionAction(problemId: string) {
   revalidatePath(`/oppgaver/${problemId}`);
 }
 
-export async function viewSolutionAndRedirectAction(problemId: string) {
+export async function viewSolutionAndRedirectAction(problemId: string, from?: string, topic?: string, fullforte?: string) {
   await viewSolutionAction(problemId);
-  redirect(`/oppgaver/${problemId}?solution=1`);
+  const query = new URLSearchParams({ solution: "1" });
+  if (from) {
+    query.set("from", from);
+  }
+  if (topic) {
+    query.set("topic", topic);
+  }
+  if (fullforte === "1") {
+    query.set("fullforte", "1");
+  }
+  redirect(`/oppgaver/${problemId}?${query.toString()}`);
 }
