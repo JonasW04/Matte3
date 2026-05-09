@@ -1,0 +1,49 @@
+{
+  "source": {
+    "courseCode": "TMA4130",
+    "year": 2025,
+    "semester": "Kont",
+    "language": "English",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4130/2024h/exam_math_4n_4d_tma4130_35-5.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4130/2024h/exam_math_4n_4d_tma4130_35-5.pdf",
+    "notes": "Relevante TMA4130/TMA4135-oppgaver for TMA4422. PDF-en inneholder både oppgaver og løsninger. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "3",
+      "title": "Lipschitzbetingelse og implisitt Runge-Kutta",
+      "problemText": "Verifiser en Lipschitzbetingelse for en ODE-høyreside, og analyser et generelt totrinns implisitt Runge-Kutta-skjema brukt på testligningen \\(y'=\\lambda y\\).",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-iii",
+      "subtopicSlug": "runge-kutta",
+      "hiddenDifficultyScore": 5,
+      "estimatedMinutes": 18,
+      "pdfPageRef": "Problem 3",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "4",
+      "title": "Hermite-lignende interpolasjon med derivatkrav",
+      "problemText": "Finn et kubisk polynom som interpolerer tre funksjonsverdier og i tillegg oppfyller et gitt krav til den deriverte i ett punkt.",
+      "solutionText": null,
+      "topicSlug": "interpolasjonsmetoder",
+      "subtopicSlug": "interpolasjon",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "Problem 4",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "8",
+      "title": "To-punkts kvadratur på \\([-1,1]\\)",
+      "problemText": "Analyser en kvadraturformel med punktene \\(-a\\) og \\(a\\): finn vekter for eksakthet på grad én, bestem \\(a\\) for eksakthet på grad to, og vis eksakthet på grad tre.",
+      "solutionText": null,
+      "topicSlug": "numerisk-integrasjon",
+      "subtopicSlug": "numerisk-integrasjon",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 15,
+      "pdfPageRef": "Problem 8",
+      "isSeedMock": false
+    }
+  ]
+}

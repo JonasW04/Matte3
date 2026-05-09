@@ -55,6 +55,7 @@ function explain(parts: AdaptiveRecommendation["scoreParts"], stat: TopicStat, p
 
 export async function getAdaptiveRecommendations(userId: string, limit = 8): Promise<AdaptiveRecommendation[]> {
   const problems = await prisma.problem.findMany({
+    where: { isSeedMock: false },
     include: {
       topic: true,
       subtopic: true,

@@ -1,0 +1,49 @@
+{
+  "source": {
+    "courseCode": "TMA4130",
+    "year": 2024,
+    "semester": "Høst",
+    "language": "English",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4130/2024h/exam_math_4n_4d_tma4130_35-8.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4130/2024h/exam_math_4n_4d_tma4130_35-8.pdf",
+    "notes": "Relevante TMA4130/TMA4135-oppgaver for TMA4422. PDF-en inneholder både oppgaver og løsninger. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "3",
+      "title": "Runge-Kutta-kode og Butcher-tablå",
+      "problemText": "Les Python-kode for en Runge-Kutta-metode, identifiser initialverdiproblemet, skriv Butcher-tablået, avgjør om metoden er eksplisitt eller implisitt, og regn ett steg for hånd.",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-iii",
+      "subtopicSlug": "butcher-tabla",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 15,
+      "pdfPageRef": "Problem 3",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "4",
+      "title": "Lagrange- og Newton-interpolasjon",
+      "problemText": "Finn interpolasjonspolynomet for tre datapunkter både på Lagrange-form og Newton-form, verifiser at uttrykkene er like, og estimer en funksjonsverdi.",
+      "solutionText": null,
+      "topicSlug": "interpolasjonsmetoder",
+      "subtopicSlug": "lagrangeinterpolasjon",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "Problem 4",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "8",
+      "title": "Kvadraturvekter, Simpson og Legendre-polynomer",
+      "problemText": "Bestem vekter i en kvadraturregel som er eksakt for kubiske polynomer, vis en relasjon mellom trapes-, midtpunkt- og Simpson-regelen, og bruk ortogonalitet for Legendre-polynomer.",
+      "solutionText": null,
+      "topicSlug": "numerisk-integrasjon",
+      "subtopicSlug": "simpsons-metode",
+      "hiddenDifficultyScore": 5,
+      "estimatedMinutes": 18,
+      "pdfPageRef": "Problem 8",
+      "isSeedMock": false
+    }
+  ]
+}

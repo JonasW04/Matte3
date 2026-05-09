@@ -20,6 +20,7 @@ export default async function TopicsPage({
     include: {
       subtopics: { orderBy: { order: "asc" } },
       problems: {
+        where: { isSeedMock: false },
         include: {
           progress: { where: { userId: user.id } }
         }

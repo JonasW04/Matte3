@@ -1,0 +1,49 @@
+{
+  "source": {
+    "courseCode": "TMA4130",
+    "year": 2021,
+    "semester": "Høst",
+    "language": "English",
+    "examPdfUrl": "https://www.math.ntnu.no/emner/TMA4130/2021h/exam/tma4130_2021h_exam.pdf",
+    "solutionPdfUrl": "https://www.math.ntnu.no/emner/TMA4130/2021h/exam/tma4130_2021h_exam_with_solution_and_grading_manual.pdf",
+    "notes": "Relevante TMA4130-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "5",
+      "title": "Lagrange- og Newton-interpolasjon",
+      "problemText": "Bruk Lagrange-interpolasjon til å finne polynomet av lavest mulig grad for tre datapunkter, skriv Newton-formen, og oppdater polynomet når et fjerde punkt legges til.",
+      "solutionText": null,
+      "topicSlug": "interpolasjonsmetoder",
+      "subtopicSlug": "lagrangeinterpolasjon",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 15,
+      "pdfPageRef": "Problem 5",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "6",
+      "title": "Sammensatt midtpunktregel og feilanalyse",
+      "problemText": "Bestem eksakthetsgrad for midtpunktregelen, vis et feilestimat for sammensatt midtpunktregel, og finn hvor mange delintervaller som trengs for en gitt toleranse.",
+      "solutionText": null,
+      "topicSlug": "numerisk-integrasjon",
+      "subtopicSlug": "numerisk-integrasjon",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 18,
+      "pdfPageRef": "Problem 6",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "8",
+      "title": "Trestegs Runge-Kutta-metode",
+      "problemText": "Les en trestegs Runge-Kutta-metode fra kode, trekk ut Butcher-tablået, bestem konsistensorden, og tolk konvergensdata fra flere metoder.",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-iii",
+      "subtopicSlug": "runge-kutta",
+      "hiddenDifficultyScore": 5,
+      "estimatedMinutes": 18,
+      "pdfPageRef": "Problem 8",
+      "isSeedMock": false
+    }
+  ]
+}

@@ -31,6 +31,7 @@ export default async function TopicPage({
     include: {
       subtopics: { orderBy: { order: "asc" } },
       problems: {
+        where: { isSeedMock: false },
         include: {
           topic: true,
           subtopic: true,

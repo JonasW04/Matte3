@@ -23,6 +23,7 @@ export default async function DashboardPage() {
       include: {
         subtopics: { orderBy: { order: "asc" } },
         problems: {
+          where: { isSeedMock: false },
           include: {
             progress: { where: { userId: user.id } }
           }
@@ -31,6 +32,7 @@ export default async function DashboardPage() {
       orderBy: { order: "asc" }
     }),
     prisma.problem.findMany({
+      where: { isSeedMock: false },
       include: {
         topic: true,
         subtopic: true,
@@ -119,7 +121,7 @@ export default async function DashboardPage() {
               <ProblemCard problem={continueProblem} status={resolveStatus(continueProblem.progress[0])} />
             ) : (
               <div className="rounded-lg bg-emerald-50 p-4 text-sm font-medium text-emerald-700">
-                Du har markert alle seed-oppgavene som klart.
+                Du har markert alle importerte oppgaver som klart.
               </div>
             )}
           </CardContent>

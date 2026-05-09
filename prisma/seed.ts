@@ -1,12 +1,23 @@
 import { PrismaClient, Role } from "@prisma/client";
 import bcrypt from "bcryptjs";
-import tma4100 from "../data/exam-problems/tma4100-2024-h.json";
-import tma4110 from "../data/exam-problems/tma4110-2024-h.json";
-import tma4130 from "../data/exam-problems/tma4130-2024-h.json";
+import { readdir, readFile } from "node:fs/promises";
+import path from "node:path";
 import { TOPIC_STRUCTURE, slugifyNorwegian } from "../lib/course-structure";
 import { importExamProblems } from "../lib/problem-import";
 
 const prisma = new PrismaClient();
+
+async function importRelevantProblemFiles() {
+  const problemDir = path.join(process.cwd(), "data", "exam-problems");
+  const files = (await readdir(problemDir)).filter((file) => file.endsWith("-relevant.json")).sort();
+
+  for (const file of files) {
+    const raw = await readFile(path.join(problemDir, file), "utf8");
+    await importExamProblems(prisma, JSON.parse(raw));
+  }
+
+  return files.length;
+}
 
 async function main() {
   for (const topicSeed of TOPIC_STRUCTURE) {
@@ -51,9 +62,7 @@ async function main() {
     }
   }
 
-  await importExamProblems(prisma, tma4110);
-  await importExamProblems(prisma, tma4130);
-  await importExamProblems(prisma, tma4100);
+  const importedFiles = await importRelevantProblemFiles();
 
   const adminPassword = await bcrypt.hash("matte3-demo", 12);
   const userPassword = await bcrypt.hash("student-demo", 12);
@@ -89,6 +98,7 @@ async function main() {
   });
 
   const sampleProblems = await prisma.problem.findMany({
+    where: { isSeedMock: false },
     orderBy: [{ topic: { order: "asc" } }, { problemNumber: "asc" }],
     take: 10
   });
@@ -123,6 +133,7 @@ async function main() {
   }
 
   console.log("Seed ferdig");
+  console.log(`Importerte relevante oppgavefiler: ${importedFiles}`);
   console.log("Demo admin: admin@matte3.local / matte3-demo");
   console.log("Demo student: student@matte3.local / student-demo");
   console.log(`Seedet ${admin.email} og ${student.email}`);

@@ -1,0 +1,37 @@
+{
+  "source": {
+    "courseCode": "TMA4130",
+    "year": 2025,
+    "semester": "Kont 2",
+    "language": "English",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4130/2024h/exam_math_4n_4d_tma4130_35-15.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4130/2024h/exam_math_4n_4d_tma4130_35-15.pdf",
+    "notes": "Relevante TMA4130/TMA4135-oppgaver for TMA4422. PDF-en inneholder både oppgaver og løsninger. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "2",
+      "title": "Lagrangeinterpolasjon og evaluering",
+      "problemText": "Konstruer interpolasjonspolynomet av lavest mulig grad fra fire datapunkter med Lagrange-formelen, bruk det til å estimere \\(f(2.5)\\), og forklar entydighet.",
+      "solutionText": null,
+      "topicSlug": "interpolasjonsmetoder",
+      "subtopicSlug": "lagrangeinterpolasjon",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "Problem 2",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "3",
+      "title": "Eksakt kvadratur og sammensatt Simpsons metode",
+      "problemText": "Bestem koeffisienter i en kvadraturformel som er eksakt for \\(P_2\\), og bruk sammensatt Simpsons metode med feilledd på en jevnt delt partisjon.",
+      "solutionText": null,
+      "topicSlug": "numerisk-integrasjon",
+      "subtopicSlug": "simpsons-metode",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 16,
+      "pdfPageRef": "Problem 3",
+      "isSeedMock": false
+    }
+  ]
+}

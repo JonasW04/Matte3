@@ -1,0 +1,49 @@
+{
+  "source": {
+    "courseCode": "TMA4130",
+    "year": 2020,
+    "semester": "Kont",
+    "language": "English",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4130/2020h/tma4130_kont.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4130/2020h/tma4130_kont_red.pdf",
+    "notes": "Relevante TMA4130/TMA4135-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "7",
+      "title": "Implisitt Euler-metode",
+      "problemText": "Skriv opp implisitt Euler-metode for ODE-en \\(y'=x^2y\\), og bruk steglengde \\(h=0.1\\) til å beregne en approksimasjon til \\(y(0.2)\\).",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-ii",
+      "subtopicSlug": "eulers-metode",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "Problem 7",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "8",
+      "title": "Interpolasjonspolynom av lavest grad",
+      "problemText": "Finn interpolasjonspolynomet av lavest mulig grad for fire gitte datapunkter.",
+      "solutionText": null,
+      "topicSlug": "interpolasjonsmetoder",
+      "subtopicSlug": "interpolasjon",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "Problem 8",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "9",
+      "title": "Taylorfeil for sentraldifferanse",
+      "problemText": "Bruk fjerdeordens Taylorutvikling til å vise et feilestimat for sentraldifferanseapproksimasjonen av \\(f''(a)\\).",
+      "solutionText": null,
+      "topicSlug": "taylorrekker-og-taylorpolynom",
+      "subtopicSlug": "restleddet",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "Problem 9",
+      "isSeedMock": false
+    }
+  ]
+}

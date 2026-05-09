@@ -26,8 +26,8 @@ export default async function ProblemPage({
   const { solution } = await searchParams;
   const showSolution = solution === "1";
 
-  const problem = await prisma.problem.findUnique({
-    where: { id: problemId },
+  const problem = await prisma.problem.findFirst({
+    where: { id: problemId, isSeedMock: false },
     include: {
       topic: true,
       subtopic: true,

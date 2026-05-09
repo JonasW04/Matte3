@@ -3,6 +3,7 @@ import { prisma } from "@/lib/prisma";
 
 export async function pickExamProblems(userId: string, count: number) {
   const problems = await prisma.problem.findMany({
+    where: { isSeedMock: false },
     include: {
       progress: { where: { userId } },
       topic: true

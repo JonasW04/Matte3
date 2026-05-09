@@ -1,0 +1,49 @@
+{
+  "source": {
+    "courseCode": "TMA4130",
+    "year": 2024,
+    "semester": "Kont",
+    "language": "English",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4130/2023h/tma4130_2023h_exam-19.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4130/2023h/tma4130_2023h_exam-19.pdf",
+    "notes": "Relevante TMA4130/TMA4135-oppgaver for TMA4422. PDF-en inneholder både oppgaver og løsninger. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "4",
+      "title": "Embedded Runge-Kutta-par",
+      "problemText": "Les av Butcher-tablået for et embedded Runge-Kutta-par fra Python-kode, og bruk metoden på et gitt initialverdiproblem med lokal feilestimat.",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-iii",
+      "subtopicSlug": "runge-kutta",
+      "hiddenDifficultyScore": 5,
+      "estimatedMinutes": 18,
+      "pdfPageRef": "Problem 4",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "5",
+      "title": "Odd interpolasjonspolynom",
+      "problemText": "Forklar hvorfor interpolasjonspolynomet for fire symmetriske datapunkter er odd, og beregn polynomet ved hjelp av Lagrange-interpolasjon.",
+      "solutionText": null,
+      "topicSlug": "interpolasjonsmetoder",
+      "subtopicSlug": "lagrangeinterpolasjon",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "Problem 5",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "9",
+      "title": "Gauss-Legendre-kvadratur",
+      "problemText": "Bruk en gitt trepunkts Gauss-Legendre-kvadratur til å approksimere en Fourier-koeffisient som krever numerisk integrasjon.",
+      "solutionText": null,
+      "topicSlug": "numerisk-integrasjon",
+      "subtopicSlug": "numerisk-integrasjon",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 14,
+      "pdfPageRef": "Problem 9",
+      "isSeedMock": false
+    }
+  ]
+}

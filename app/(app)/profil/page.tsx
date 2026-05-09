@@ -17,6 +17,7 @@ export default async function ProfilePage() {
 
   const [problems, topics] = await Promise.all([
     prisma.problem.findMany({
+      where: { isSeedMock: false },
       include: {
         progress: { where: { userId: user.id } }
       }
@@ -25,6 +26,7 @@ export default async function ProfilePage() {
       include: {
         subtopics: true,
         problems: {
+          where: { isSeedMock: false },
           include: {
             progress: { where: { userId: user.id } }
           }

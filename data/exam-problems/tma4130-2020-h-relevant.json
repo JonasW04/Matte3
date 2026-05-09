@@ -1,0 +1,49 @@
+{
+  "source": {
+    "courseCode": "TMA4130",
+    "year": 2020,
+    "semester": "Høst",
+    "language": "English",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4130/2020h/completeexam_nosolutions.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4130/2020h/completeexam_v2.pdf",
+    "notes": "Relevante TMA4130/TMA4135-oppgaver for TMA4422. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "7",
+      "title": "Lagrange- og Newton-interpolasjon",
+      "problemText": "Finn interpolasjonspolynomet av lavest mulig grad for fire datapunkter, skriv både Lagrange- og Newton-form, og bruk polynomet til å estimere \\(f(0)\\).",
+      "solutionText": null,
+      "topicSlug": "interpolasjonsmetoder",
+      "subtopicSlug": "lagrangeinterpolasjon",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 15,
+      "pdfPageRef": "Problem 7",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "8",
+      "title": "Simpsons metode og eksakt feil",
+      "problemText": "Bruk Simpsons metode til å approksimere et bestemt integral for en stykkevis definert funksjon, og beregn feilen.",
+      "solutionText": null,
+      "topicSlug": "numerisk-integrasjon",
+      "subtopicSlug": "simpsons-metode",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 10,
+      "pdfPageRef": "Problem 8",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "9",
+      "title": "Runge-Kutta fra Python-kode",
+      "problemText": "Les av en Runge-Kutta-metode fra Python-kode med flere versjoner, skriv tilhørende Butcher-tablå, og vurder metodens egenskaper.",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-iii",
+      "subtopicSlug": "butcher-tabla",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 15,
+      "pdfPageRef": "Problem 9",
+      "isSeedMock": false
+    }
+  ]
+}

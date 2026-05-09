@@ -1,0 +1,49 @@
+{
+  "source": {
+    "courseCode": "TMA4130",
+    "year": 2023,
+    "semester": "Høst",
+    "language": "English",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4130/2023h/tma4130_2023h_exam.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4130/2023h/tma4130_2023h_exam.pdf",
+    "notes": "Relevante TMA4130/TMA4135-oppgaver for TMA4422. PDF-en inneholder både oppgaver og løsninger. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "1",
+      "title": "Trigonometrisk interpolasjon",
+      "problemText": "Finn et trigonometrisk polynom på formen \\(c_0+c_1\\cos x+c_2\\sin x+c_3\\cos 2x+c_4\\sin 2x\\) som interpolerer fem gitte verdier.",
+      "solutionText": null,
+      "topicSlug": "interpolasjonsmetoder",
+      "subtopicSlug": "interpolasjon",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 15,
+      "pdfPageRef": "Problem 1",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "2",
+      "title": "Sammensatt Simpsons metode for koeffisienter",
+      "problemText": "Bruk sammensatt Simpsons metode med to delintervaller til å approksimere Fourier-koeffisientene \\(a_0\\) og \\(b_1\\) for en periodisk funksjon.",
+      "solutionText": null,
+      "topicSlug": "numerisk-integrasjon",
+      "subtopicSlug": "simpsons-metode",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "Problem 2",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "5",
+      "title": "Numerisk ODE-kode og feilorden",
+      "problemText": "Identifiser initialverdiproblemet og metoden i en Python-implementasjon for et ODE-system, og bruk kjent metodeorden til å estimere feilen ved en større steglengde.",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-ii",
+      "subtopicSlug": "konvergens-av-numeriske-metoder",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 15,
+      "pdfPageRef": "Problem 5",
+      "isSeedMock": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "source": {
+    "courseCode": "TMA4130",
+    "year": 2025,
+    "semester": "Høst",
+    "language": "English",
+    "examPdfUrl": "https://wiki.math.ntnu.no/_media/tma4130/2025h/exam_math_4n_4d_tma4130_35-21.pdf",
+    "solutionPdfUrl": "https://wiki.math.ntnu.no/_media/tma4130/2025h/exam_math_4n_4d_tma4130_35-21.pdf",
+    "notes": "Relevante TMA4130/TMA4135-oppgaver for TMA4422. PDF-en inneholder både oppgaver og løsninger. Problemtekstene er korte importtekster basert på ekte PDF; se examPdfUrl for full oppgavetekst."
+  },
+  "problems": [
+    {
+      "problemNumber": "2",
+      "title": "Interpolasjonspolynom fra fire punkter",
+      "problemText": "Konstruer interpolasjonspolynomet av lavest mulig grad for fire datapunkter, bruk polynomet til å estimere \\(f(1.5)\\), og forklar hvorfor interpolasjonspolynomet er entydig.",
+      "solutionText": null,
+      "topicSlug": "interpolasjonsmetoder",
+      "subtopicSlug": "lagrangeinterpolasjon",
+      "hiddenDifficultyScore": 3,
+      "estimatedMinutes": 12,
+      "pdfPageRef": "Problem 2",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "4",
+      "title": "Kvadraturvekter og midtpunktregelen",
+      "problemText": "Bestem vektene i en kvadraturregel som er eksakt for polynomer av grad tre, og bruk Taylorutvikling til å utlede midtpunktregelen med feilledd.",
+      "solutionText": null,
+      "topicSlug": "numerisk-integrasjon",
+      "subtopicSlug": "numerisk-integrasjon",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 16,
+      "pdfPageRef": "Problem 4",
+      "isSeedMock": false
+    },
+    {
+      "problemNumber": "6",
+      "title": "Førsteordens system og Runge-Kutta",
+      "problemText": "Skriv et tredjeordens initialverdiproblem som et førsteordens system, utfør eksplisitte Euler-steg for en ODE, og vis sammenhengen mellom et Runge-Kutta-skjema og trapesmetoden.",
+      "solutionText": null,
+      "topicSlug": "differensialligninger-iii",
+      "subtopicSlug": "runge-kutta",
+      "hiddenDifficultyScore": 4,
+      "estimatedMinutes": 18,
+      "pdfPageRef": "Problem 6",
+      "isSeedMock": false
+    }
+  ]
+}
