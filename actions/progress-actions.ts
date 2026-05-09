@@ -38,6 +38,31 @@ export async function markProblemAction(problemId: string, status: ProgressStatu
   revalidatePath("/adaptiv");
 }
 
+export async function recordProblemViewAction(problemId: string) {
+  const user = await requireUser();
+  const now = new Date();
+
+  await prisma.userProblemProgress.upsert({
+    where: {
+      userId_problemId: {
+        userId: user.id,
+        problemId
+      }
+    },
+    update: {
+      lastViewedAt: now
+    },
+    create: {
+      userId: user.id,
+      problemId,
+      status: ProgressStatus.NOT_ATTEMPTED,
+      lastViewedAt: now
+    }
+  });
+
+  revalidatePath("/dashboard");
+}
+
 export async function viewSolutionAction(problemId: string) {
   const user = await requireUser();
 

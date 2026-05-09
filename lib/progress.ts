@@ -28,6 +28,53 @@ export function getProblemStatus(problem: ProblemWithMeta, userId: string) {
   return resolveStatus(problem.progress.find((item) => item.userId === userId));
 }
 
+type ContinueProblemCandidate = {
+  progress: Array<{
+    status: ProgressStatus;
+    lastViewedAt?: Date | null;
+    lastAttemptedAt?: Date | null;
+    solutionViewedAt?: Date | null;
+  }>;
+};
+
+function latestActivityTime(progress: ContinueProblemCandidate["progress"][number]) {
+  const timestamps = [progress.lastViewedAt, progress.lastAttemptedAt, progress.solutionViewedAt]
+    .filter((value): value is Date => Boolean(value))
+    .map((value) => value.getTime());
+
+  return timestamps.length > 0 ? Math.max(...timestamps) : null;
+}
+
+export function selectContinueProblem<T extends ContinueProblemCandidate>(problems: T[]) {
+  let latestActive: { problem: T; time: number } | null = null;
+  let firstUnresolved: T | null = null;
+  let firstUntouched: T | null = null;
+
+  for (const problem of problems) {
+    const progress = problem.progress[0];
+    const status = resolveStatus(progress);
+
+    if (status === ProgressStatus.SOLVED) continue;
+
+    if (status === ProgressStatus.NOT_SOLVED && !firstUnresolved) {
+      firstUnresolved = problem;
+    }
+
+    if (status === ProgressStatus.NOT_ATTEMPTED && !firstUntouched) {
+      firstUntouched = problem;
+    }
+
+    if (!progress) continue;
+
+    const time = latestActivityTime(progress);
+    if (time !== null && (!latestActive || time > latestActive.time)) {
+      latestActive = { problem, time };
+    }
+  }
+
+  return latestActive?.problem ?? firstUnresolved ?? firstUntouched;
+}
+
 export function statusLabel(status: ProgressStatus) {
   switch (status) {
     case ProgressStatus.SOLVED:

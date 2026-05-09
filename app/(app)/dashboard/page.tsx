@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { ArrowRight, Brain, ClipboardList } from "lucide-react";
-import { ProgressStatus } from "@prisma/client";
 import { PageShell } from "@/components/app/page-shell";
 import { ProblemCard } from "@/components/app/problem-card";
 import { StatCard } from "@/components/app/stat-card";
@@ -10,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ProgressBar } from "@/components/ui/progress";
 import { requireUser } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
-import { computeGlobalProgress, computeTopicProgress, recommendationText, resolveStatus } from "@/lib/progress";
+import { computeGlobalProgress, computeTopicProgress, recommendationText, resolveStatus, selectContinueProblem } from "@/lib/progress";
 import { formatShortDateTime } from "@/lib/utils";
 
 export const dynamic = "force-dynamic";
@@ -50,9 +49,7 @@ export default async function DashboardPage() {
   ]);
 
   const stats = computeGlobalProgress(problems, user.id);
-  const continueProblem =
-    problems.find((problem) => resolveStatus(problem.progress[0]) === ProgressStatus.NOT_SOLVED) ??
-    problems.find((problem) => resolveStatus(problem.progress[0]) === ProgressStatus.NOT_ATTEMPTED);
+  const continueProblem = selectContinueProblem(problems);
 
   const recommended = topics
     .map((topic) => {

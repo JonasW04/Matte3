@@ -132,6 +132,7 @@ model UserProblemProgress {
   problemId        String
   status           ProgressStatus @default(NOT_ATTEMPTED)
   attempts         Int            @default(0)
+  lastViewedAt     DateTime?
   lastAttemptedAt  DateTime?
   solvedAt         DateTime?
   solutionViewedAt DateTime?
@@ -142,6 +143,7 @@ model UserProblemProgress {
 
   @@id([userId, problemId])
   @@index([status])
+  @@index([lastViewedAt])
   @@index([lastAttemptedAt])
 }
 

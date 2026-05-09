@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { completeExamSessionAction } from "@/actions/exam-actions";
 import { markProblemAction, viewSolutionAndRedirectAction } from "@/actions/progress-actions";
 import { PageShell } from "@/components/app/page-shell";
+import { ProblemViewTracker } from "@/components/app/problem-view-tracker";
 import { MathText } from "@/components/math/math-text";
 import { Badge, StatusBadge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -113,6 +114,8 @@ export default async function ProblemPage({
 
   return (
     <PageShell width="medium">
+      <ProblemViewTracker problemId={problem.id} />
+
       <Link href={backHref} className="mb-6 inline-flex items-center gap-2 text-sm font-semibold text-stone-500 hover:text-stone-950">
         <ArrowLeft className="h-4 w-4" />
         {backLabel}
